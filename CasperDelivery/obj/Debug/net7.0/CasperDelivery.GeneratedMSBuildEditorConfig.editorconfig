@@ -1,0 +1,61 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CasperDelivery
+build_property.RootNamespace = CasperDelivery
+build_property.ProjectDir = C:\netprojects\Important\CasperDelivery\CasperDelivery\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\netprojects\Important\CasperDelivery\CasperDelivery
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/netprojects/Important/CasperDelivery/CasperDelivery/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/netprojects/Important/CasperDelivery/CasperDelivery/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/netprojects/Important/CasperDelivery/CasperDelivery/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/netprojects/Important/CasperDelivery/CasperDelivery/Components/Carousell.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDYXJvdXNlbGwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-l3o9vnm1tb
+
+[C:/netprojects/Important/CasperDelivery/CasperDelivery/Pages/RestaurantDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzdGF1cmFudERldGFpbHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-cyjpsl0n28
+
+[C:/netprojects/Important/CasperDelivery/CasperDelivery/Pages/RestaurantPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzdGF1cmFudFBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-n8gg9pmag4
+
+[C:/netprojects/Important/CasperDelivery/CasperDelivery/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-hnegp1hqmk
+
+[C:/netprojects/Important/CasperDelivery/CasperDelivery/Shared/PageFooter.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFBhZ2VGb290ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-x86thgrsab
+
+[C:/netprojects/Important/CasperDelivery/CasperDelivery/Shared/TopMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFRvcE1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-xo1z7isbm6
+
+[C:/netprojects/Important/CasperDelivery/CasperDelivery/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/netprojects/Important/CasperDelivery/CasperDelivery/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 

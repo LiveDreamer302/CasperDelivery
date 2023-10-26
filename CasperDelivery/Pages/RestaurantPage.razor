@@ -1,0 +1,35 @@
+﻿@page "/restaurants"
+@using Data.Models
+@inject HttpClient HttpClient
+
+
+
+@if (Restaurant != null)
+{
+    <div class="container bg-info mx-auto rounded-3">
+      <h1 class="fs-1 mb-5">Restaurants</h1>
+        <div class="row justify-content-center">
+                @foreach (var item in Restaurant)
+                {
+                    <div class="image-container">
+                        <img src="images/Restaurants/@item.PictureUrl" alt="Your Image">
+                        <div class="text-container">
+                            <p>Your Text Here</p>
+                        </div>
+                    </div>
+
+                }
+        </div>
+    </div>
+}
+
+else{<p>Loading data...</p>}
+@code {
+    List<Restaurants> Restaurant;
+    protected override async Task OnInitializedAsync()
+    {
+        var apiUrl = "http://localhost:5208/api/product/restaurants"; 
+        
+        Restaurant = await HttpClient.GetFromJsonAsync<List<Restaurants>>(apiUrl);
+    }
+}

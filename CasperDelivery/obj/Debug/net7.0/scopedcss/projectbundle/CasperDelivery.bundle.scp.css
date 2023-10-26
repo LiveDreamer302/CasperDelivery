@@ -1,0 +1,54 @@
+/* _content/CasperDelivery/Components/Carousell.razor.rz.scp.css */
+/* _content/CasperDelivery/Pages/RestaurantDetails.razor.rz.scp.css */
+h1[b-cyjpsl0n28]{
+    font-family: "Copperplate Gothic Light";
+    display: flex;
+    justify-content: center;
+}
+/* _content/CasperDelivery/Pages/RestaurantPage.razor.rz.scp.css */
+h1[b-n8gg9pmag4]{
+font-family: "Copperplate Gothic Light";
+display: flex;
+justify-content: center;
+}
+
+.image-container[b-n8gg9pmag4] {
+    width: 300px; /* Set your desired container width */
+    text-align: center; /* Center align the content horizontally */
+}
+
+.image-container img[b-n8gg9pmag4] {
+    max-width: 100%; /* Make the image fit the container's width */
+    height: auto; /* Maintain the image's aspect ratio */
+}
+
+.text-container[b-n8gg9pmag4] {
+    background-color: #333; /* Background color for the text container */
+    color: white; /* Text color */
+    padding: 10px; /* Padding around the text */
+    text-align: center; /* Center align the text */
+}
+/* _content/CasperDelivery/Shared/MainLayout.razor.rz.scp.css */
+.content[b-hnegp1hqmk]{
+background-color: #f6f6ed
+}
+/* _content/CasperDelivery/Shared/PageFooter.razor.rz.scp.css */
+.no-decorations[b-x86thgrsab]{
+text-decoration: none;
+color: black;
+}
+.no-decorations:hover[b-x86thgrsab] {
+color: #ea744b; !important;}
+/* _content/CasperDelivery/Shared/TopMenu.razor.rz.scp.css */
+a[b-xo1z7isbm6]{
+color: #666770
+}
+nav[b-xo1z7isbm6]{
+    -webkit-box-shadow: -1px 10px 39px 0px rgba(0,0,0,0.09);
+    -moz-box-shadow: -1px 10px 39px 0px rgba(0,0,0,0.09);
+    box-shadow: -1px 10px 39px 0px rgba(0,0,0,0.09);}
+
+.navbar-toggler-icon[b-xo1z7isbm6]   {
+    color: gold;
+    background-color: #084298;
+}

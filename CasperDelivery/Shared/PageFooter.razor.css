@@ -1,0 +1,6 @@
+﻿.no-decorations{
+text-decoration: none;
+color: black;
+}
+.no-decorations:hover {
+color: #ea744b; !important;}

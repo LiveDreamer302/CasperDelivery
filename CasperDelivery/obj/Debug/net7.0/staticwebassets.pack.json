@@ -1,0 +1,125 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\CasperDelivery.bundle.scp.css",
+      "PackagePath": "staticwebassets\\CasperDelivery.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Carousel\\image1.jpg",
+      "PackagePath": "staticwebassets\\images\\Carousel\\image1.jpg"
+    },
+    {
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Carousel\\image2.jpg",
+      "PackagePath": "staticwebassets\\images\\Carousel\\image2.jpg"
+    },
+    {
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Carousel\\image3.jpg",
+      "PackagePath": "staticwebassets\\images\\Carousel\\image3.jpg"
+    },
+    {
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Logo\\logo-black.png",
+      "PackagePath": "staticwebassets\\images\\Logo\\logo-black.png"
+    },
+    {
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Logo\\logo-color.png",
+      "PackagePath": "staticwebassets\\images\\Logo\\logo-color.png"
+    },
+    {
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Logo\\logo-no-background.png",
+      "PackagePath": "staticwebassets\\images\\Logo\\logo-no-background.png"
+    },
+    {
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Logo\\logo-white.png",
+      "PackagePath": "staticwebassets\\images\\Logo\\logo-white.png"
+    },
+    {
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Restaurants\\Andys.png",
+      "PackagePath": "staticwebassets\\images\\Restaurants\\Andys.png"
+    },
+    {
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Restaurants\\McDonald.png",
+      "PackagePath": "staticwebassets\\images\\Restaurants\\McDonald.png"
+    },
+    {
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Restaurants\\Pizza.jpg",
+      "PackagePath": "staticwebassets\\images\\Restaurants\\Pizza.jpg"
+    },
+    {
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Restaurants\\Starkebab.png",
+      "PackagePath": "staticwebassets\\images\\Restaurants\\Starkebab.png"
+    },
+    {
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Restaurants\\Sushi.jpg",
+      "PackagePath": "staticwebassets\\images\\Restaurants\\Sushi.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.CasperDelivery.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.CasperDelivery.props",
+      "PackagePath": "build\\CasperDelivery.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.CasperDelivery.props",
+      "PackagePath": "buildMultiTargeting\\CasperDelivery.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.CasperDelivery.props",
+      "PackagePath": "buildTransitive\\CasperDelivery.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "Name": "Andy's",
+    "PictureUrl": "Andys.png"
+  },
+  {
+    "Name": "McDonald's",
+    "PictureUrl": "McDonald.png"
+  },
+  {
+    "Name": "StarKebab",
+    "PictureUrl": "Starkebab.png"
+  },
+  {
+    "Name": "Pizza Palace",
+    "PictureUrl": "Pizza.jpg"
+  },
+  {
+    "Name": "Sushi Delight",
+    "PictureUrl": "Sushi.jpg"
+  }
+]

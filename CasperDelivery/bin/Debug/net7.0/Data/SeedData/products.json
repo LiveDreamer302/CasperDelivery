@@ -1,0 +1,163 @@
+﻿[
+  {
+    "Name": "Burger 1",
+    "Price": 5.99,
+    "Description": "Delicious burger with all the fixings",
+    "PictureUrl": "burger.jpg",
+    "RestaurantId": 1
+  },
+  {
+    "Name": "Fries 1",
+    "Price": 2.99,
+    "Description": "Crispy golden fries",
+    "PictureUrl": "fries.jpg",
+    "RestaurantId": 1
+  },
+  {
+    "Name": "Pizza 1",
+    "Price": 8.99,
+    "Description": "Classic pizza with your choice of toppings",
+    "PictureUrl": "pizza.jpg",
+    "RestaurantId": 2
+  },
+  {
+    "Name": "Soda 1",
+    "Price": 1.99,
+    "Description": "Refreshing soda",
+    "PictureUrl": "soda.jpg",
+    "RestaurantId": 2
+  },
+  {
+    "Name": "Chicken Wings 1",
+    "Price": 7.99,
+    "Description": "Spicy chicken wings with dipping sauce",
+    "PictureUrl": "wings.jpg",
+    "RestaurantId": 1
+  },
+  {
+    "Name": "Salad 1",
+    "Price": 4.99,
+    "Description": "Fresh garden salad with choice of dressing",
+    "PictureUrl": "salad.jpg",
+    "RestaurantId": 3
+  },
+  {
+    "Name": "Steak 1",
+    "Price": 12.99,
+    "Description": "Juicy grilled steak with sides",
+    "PictureUrl": "steak.jpg",
+    "RestaurantId": 4
+  },
+  {
+    "Name": "Pasta 1",
+    "Price": 9.99,
+    "Description": "Italian pasta with rich tomato sauce",
+    "PictureUrl": "pasta.jpg",
+    "RestaurantId": 2
+  },
+  {
+    "Name": "Fish and Chips 1",
+    "Price": 10.99,
+    "Description": "Crispy fish and hand-cut chips",
+    "PictureUrl": "fish_and_chips.jpg",
+    "RestaurantId": 3
+  },
+  {
+    "Name": "Ice Cream 1",
+    "Price": 3.99,
+    "Description": "Variety of ice cream flavors",
+    "PictureUrl": "ice_cream.jpg",
+    "RestaurantId": 4
+  },
+  {
+    "Name": "Taco 1",
+    "Price": 6.99,
+    "Description": "Authentic Mexican tacos",
+    "PictureUrl": "taco.jpg",
+    "RestaurantId": 1
+  },
+  {
+    "Name": "Sushi 1",
+    "Price": 14.99,
+    "Description": "Freshly prepared sushi rolls",
+    "PictureUrl": "sushi.jpg",
+    "RestaurantId": 5
+  },
+  {
+    "Name": "Sandwich 1",
+    "Price": 5.49,
+    "Description": "Classic deli sandwich",
+    "PictureUrl": "sandwich.jpg",
+    "RestaurantId": 5
+  },
+  {
+    "Name": "Smoothie 1",
+    "Price": 4.99,
+    "Description": "Refreshing fruit smoothie",
+    "PictureUrl": "smoothie.jpg",
+    "RestaurantId": 2
+  },
+  {
+    "Name": "Hot Dog 1",
+    "Price": 3.49,
+    "Description": "All-American hot dog with toppings",
+    "PictureUrl": "hot_dog.jpg",
+    "RestaurantId": 3
+  },
+  {
+    "Name": "Wings 1",
+    "Price": 8.99,
+    "Description": "Variety of chicken wing flavors",
+    "PictureUrl": "wings.jpg",
+    "RestaurantId": 5
+  },
+  {
+    "Name": "Burrito 1",
+    "Price": 7.99,
+    "Description": "Hearty burrito with rice and beans",
+    "PictureUrl": "burrito.jpg",
+    "RestaurantId": 4
+  },
+  {
+    "Name": "Pancakes 1",
+    "Price": 4.99,
+    "Description": "Fluffy pancakes with syrup",
+    "PictureUrl": "pancakes.jpg",
+    "RestaurantId": 2
+  },
+  {
+    "Name": "Ramen 1",
+    "Price": 9.99,
+    "Description": "Japanese ramen with savory broth",
+    "PictureUrl": "ramen.jpg",
+    "RestaurantId": 2
+  },
+  {
+    "Name": "Milkshake 1",
+    "Price": 3.99,
+    "Description": "Thick and creamy milkshake",
+    "PictureUrl": "milkshake.jpg",
+    "RestaurantId": 3
+  },
+  {
+    "Name": "Tofu Stir-Fry 1",
+    "Price": 8.49,
+    "Description": "Healthy tofu stir-fry with vegetables",
+    "PictureUrl": "tofu_stir_fry.jpg",
+    "RestaurantId": 3
+  },
+  {
+    "Name": "Donut 1",
+    "Price": 1.99,
+    "Description": "Freshly baked donut with icing",
+    "PictureUrl": "donut.jpg",
+    "RestaurantId": 4
+  },
+  {
+    "Name": "Coffee 1",
+    "Price": 2.49,
+    "Description": "Hot coffee with various options",
+    "PictureUrl": "coffee.jpg",
+    "RestaurantId": 1
+  }
+]

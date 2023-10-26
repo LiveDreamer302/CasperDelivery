@@ -1,0 +1,23 @@
+﻿@page "/restaurants/{RestaurantId}"
+@using Data.Models
+@inject HttpClient HttpClient
+
+@if(Restaurant != null){
+<h1>@Restaurant.Name</h1>
+<img src="images\restaurants\@Restaurant.PictureUrl" width="500" height="500" alt="@Restaurant.Name"/>
+}
+
+@code {
+    [Parameter]
+    public string RestaurantId { get; set; }
+
+    Restaurants Restaurant;
+    protected override async Task OnParametersSetAsync()
+    {
+        var apiUrl = $"http://localhost:5208/api/product/restaurants/{RestaurantId}"; 
+        
+        Restaurant = await HttpClient.GetFromJsonAsync<Restaurants>(apiUrl);
+    }
+    
+
+}

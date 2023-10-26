@@ -1,0 +1,22 @@
+h1[b-n8gg9pmag4]{
+font-family: "Copperplate Gothic Light";
+display: flex;
+justify-content: center;
+}
+
+.image-container[b-n8gg9pmag4] {
+    width: 300px; /* Set your desired container width */
+    text-align: center; /* Center align the content horizontally */
+}
+
+.image-container img[b-n8gg9pmag4] {
+    max-width: 100%; /* Make the image fit the container's width */
+    height: auto; /* Maintain the image's aspect ratio */
+}
+
+.text-container[b-n8gg9pmag4] {
+    background-color: #333; /* Background color for the text container */
+    color: white; /* Text color */
+    padding: 10px; /* Padding around the text */
+    text-align: center; /* Center align the text */
+}
