@@ -14,6 +14,11 @@ public class SeedContext
             context.Restaurants.AddRange(restaurants);
         }
         
+        if (context.ChangeTracker.HasChanges())
+        {
+            await context.SaveChangesAsync();
+        }
+        
         if (!context.Products.Any())
         {
             var productsData = File.ReadAllText("Data/SeedData/products.json");
