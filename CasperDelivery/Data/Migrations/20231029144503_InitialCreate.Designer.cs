@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CasperDelivery.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20231025175209_InitialInit")]
-    partial class InitialInit
+    [Migration("20231029144503_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -169,21 +169,16 @@ namespace CasperDelivery.Data.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("OrdersId")
-                        .HasColumnType("int");
-
                     b.Property<string>("PictureUrl")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<double>("Price")
                         .HasColumnType("float");
 
-                    b.Property<int?>("RestaurantId")
+                    b.Property<int>("RestaurantId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("OrdersId");
 
                     b.HasIndex("RestaurantId");
 
@@ -342,6 +337,21 @@ namespace CasperDelivery.Data.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("OrdersProducts", b =>
+                {
+                    b.Property<int>("OrdersId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProductsOrderedId")
+                        .HasColumnType("int");
+
+                    b.HasKey("OrdersId", "ProductsOrderedId");
+
+                    b.HasIndex("ProductsOrderedId");
+
+                    b.ToTable("OrdersProducts");
+                });
+
             modelBuilder.Entity("CasperDelivery.Data.Models.Address", b =>
                 {
                     b.HasOne("CasperDelivery.Data.Models.AppUser", "User")
@@ -362,13 +372,11 @@ namespace CasperDelivery.Data.Migrations
 
             modelBuilder.Entity("CasperDelivery.Data.Models.Products", b =>
                 {
-                    b.HasOne("CasperDelivery.Data.Models.Orders", null)
-                        .WithMany("ProductsOrdered")
-                        .HasForeignKey("OrdersId");
-
                     b.HasOne("CasperDelivery.Data.Models.Restaurants", "Restaurant")
                         .WithMany("Products")
-                        .HasForeignKey("RestaurantId");
+                        .HasForeignKey("RestaurantId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Restaurant");
                 });
@@ -424,14 +432,24 @@ namespace CasperDelivery.Data.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("OrdersProducts", b =>
+                {
+                    b.HasOne("CasperDelivery.Data.Models.Orders", null)
+                        .WithMany()
+                        .HasForeignKey("OrdersId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CasperDelivery.Data.Models.Products", null)
+                        .WithMany()
+                        .HasForeignKey("ProductsOrderedId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("CasperDelivery.Data.Models.AppUser", b =>
                 {
                     b.Navigation("Address");
-                });
-
-            modelBuilder.Entity("CasperDelivery.Data.Models.Orders", b =>
-                {
-                    b.Navigation("ProductsOrdered");
                 });
 
             modelBuilder.Entity("CasperDelivery.Data.Models.Restaurants", b =>

@@ -1,22 +1,42 @@
 ﻿@page "/restaurants/{RestaurantId}"
 @using Data.Models
-@inject HttpClient HttpClient
+@using CasperDelivery.Interfaces
+@using CasperDelivery.Interfaces.Specifications
+@inject IGenericRepository<Restaurants> RestRepo
 
 @if(Restaurant != null){
 <h1>@Restaurant.Name</h1>
-<img src="images\restaurants\@Restaurant.PictureUrl" width="500" height="500" alt="@Restaurant.Name"/>
+    <img src="images\restaurants\@Restaurant.PictureUrl" width="500" height="500" alt="@Restaurant.Name"/>
+                                                                                                        
+    <div class="container bg-info mx-auto rounded-3">
+        <h1 class="fs-1 mb-5">Products</h1>
+        <div class="row justify-content-center">
+            @foreach (var item in Restaurant.Products)
+            {
+                <div class="image-container">
+                    <img src="images/Restaurants/@item.PictureUrl" alt="Your Image">
+                    <div class="text-container">
+                        <p>@item.Name</p>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>                                                                                                   
 }
+
+
 
 @code {
     [Parameter]
     public string RestaurantId { get; set; }
 
+
     Restaurants Restaurant;
     protected override async Task OnParametersSetAsync()
     {
-        var apiUrl = $"http://localhost:5208/api/product/restaurants/{RestaurantId}"; 
-        
-        Restaurant = await HttpClient.GetFromJsonAsync<Restaurants>(apiUrl);
+        int Id = int.Parse(RestaurantId);
+        GetRestaurantWithProductSpecification spec = new GetRestaurantWithProductSpecification(Id);
+        Restaurant = await RestRepo.GetEntityWithSpecAsync(spec);
     }
     
 

@@ -1,6 +1,7 @@
 ﻿@page "/restaurants"
 @using Data.Models
-@inject HttpClient HttpClient
+@using CasperDelivery.Interfaces
+@inject IGenericRepository<Restaurants> RestRepo
 
 
 
@@ -17,7 +18,6 @@
                             <p>Your Text Here</p>
                         </div>
                     </div>
-
                 }
         </div>
     </div>
@@ -28,8 +28,6 @@ else{<p>Loading data...</p>}
     List<Restaurants> Restaurant;
     protected override async Task OnInitializedAsync()
     {
-        var apiUrl = "http://localhost:5208/api/product/restaurants"; 
-        
-        Restaurant = await HttpClient.GetFromJsonAsync<List<Restaurants>>(apiUrl);
+        Restaurant = await RestRepo.GetAllAsync();
     }
 }
