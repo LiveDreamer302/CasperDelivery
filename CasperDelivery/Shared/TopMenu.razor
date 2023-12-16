@@ -1,6 +1,11 @@
 ﻿@using CasperDelivery.Data.Models
 @using CasperDelivery.Interfaces
-@inject IGenericRepository<Restaurants> RestRepo
+@using CasperDelivery.Services
+@using CasperDelivery.Data
+@using Microsoft.EntityFrameworkCore
+@inject NavBarService service
+
+
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid me-5 ms-5">
     <a class="navbar-brand" href="#"><img src="images/Logo/logo-no-background.png" height="50" width="124"></a>
@@ -26,7 +31,7 @@
               {
                 <li>
                   <img src="images/Restaurants/@item.PictureUrl" class="logo-style mx-1 rounded-pill"/>
-                  <a href="http://localhost:5208/restaurants/@item.Id">@item.Name</a>
+                  <a href="/restaurants/@item.Id">@item.Name</a>
                 </li>
               }
             }
@@ -37,16 +42,15 @@
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
-      <button class="btn btn-outline-primary ms-5"><a><i class="fa fa-sign-in" aria-hidden="true"></i> Log In</a></button>
-      <button class="btn btn-outline-primary mx-3"><a><i class="fa fa-arrow-up" aria-hidden="true"></i> Register</a></button>
+      <button class="btn btn-outline-primary ms-5"><a href="/login" class="button-text"><i class="fa fa-duotone fa-user" aria-hidden="true"></i> Authenticate</a></button>
     </div>
   </div>
 </nav>
 
 @code {
-  List<Restaurants> Restaurant;
+  List<Restaurants> Restaurant = new List<Restaurants>();
   protected override async Task OnInitializedAsync()
   {
-    Restaurant = await RestRepo.GetAllAsync();
+    Restaurant = await service.GetAllAsync();
   }
 }

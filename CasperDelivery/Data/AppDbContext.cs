@@ -24,6 +24,8 @@ public class AppDbContext : IdentityDbContext<AppUser>
             .HasOne(x => x.Address)
             .WithOne(x => x.User)
             .HasPrincipalKey<AppUser>(x => x.Id);
+        builder.Entity<Orders>().Property(o => o.TotalPrice).HasColumnType("money");
+        builder.Entity<Products>().Property(p => p.Price).HasColumnType("money");
 
         base.OnModelCreating(builder);
     }

@@ -32,6 +32,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDYXJvdXNlbGwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-l3o9vnm1tb
 
+[C:/netprojects/Important/CasperDelivery/CasperDelivery/Pages/LoginPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5QYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-jpgfmr536q
+
+[C:/netprojects/Important/CasperDelivery/CasperDelivery/Pages/RegisterPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXJQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-3ibz1srjv9
+
 [C:/netprojects/Important/CasperDelivery/CasperDelivery/Pages/RestaurantDetails.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzdGF1cmFudERldGFpbHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-cyjpsl0n28

@@ -1,3 +1,7 @@
 .content[b-hnegp1hqmk]{
-background-color: #f6f6ed
+background-color: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    min-height: 78vh;
+    margin: 0;
 }

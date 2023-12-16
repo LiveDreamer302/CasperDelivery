@@ -1,0 +1,11 @@
+﻿.card {
+    border: none;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}

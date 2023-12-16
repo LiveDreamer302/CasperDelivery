@@ -18,8 +18,8 @@ public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
     
     public async Task<List<T>> GetAllAsync()
     {
-       return await _context.Set<T>().ToListAsync();
-    }
+        return await _context.Set<T>().ToListAsync();
+        }
 
     public async Task<T> GetOneAsync(int id)
     {
@@ -55,4 +55,5 @@ public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
     {
         return SpecificationEvaluator<T>.GetQuery(_context.Set<T>().AsQueryable(), spec);
     }
+    
 }

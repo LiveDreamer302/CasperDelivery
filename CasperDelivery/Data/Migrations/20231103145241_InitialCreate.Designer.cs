@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CasperDelivery.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20231029144503_InitialCreate")]
+    [Migration("20231103145241_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -142,8 +142,8 @@ namespace CasperDelivery.Data.Migrations
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
 
-                    b.Property<double>("TotalPrice")
-                        .HasColumnType("float");
+                    b.Property<decimal>("TotalPrice")
+                        .HasColumnType("money");
 
                     b.Property<string>("UserId")
                         .HasColumnType("nvarchar(450)");
@@ -172,8 +172,8 @@ namespace CasperDelivery.Data.Migrations
                     b.Property<string>("PictureUrl")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("Price")
-                        .HasColumnType("float");
+                    b.Property<decimal>("Price")
+                        .HasColumnType("money");
 
                     b.Property<int>("RestaurantId")
                         .HasColumnType("int");
@@ -192,6 +192,9 @@ namespace CasperDelivery.Data.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("BackgroundUrl")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");

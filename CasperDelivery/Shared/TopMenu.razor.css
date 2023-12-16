@@ -1,5 +1,6 @@
 ﻿a{
-color: #666770
+color: #666770;
+text-decoration: none;
 }
 nav{
     -webkit-box-shadow: -1px 10px 39px 0px rgba(0,0,0,0.09);
