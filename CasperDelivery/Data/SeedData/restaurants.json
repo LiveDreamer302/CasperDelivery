@@ -1,22 +1,27 @@
 [
   {
     "Name": "Andy's",
-    "PictureUrl": "Andys.png"
+    "PictureUrl": "Andys.png",
+    "BackgroundUrl": "AndysBackground.png"
   },
   {
     "Name": "McDonald's",
-    "PictureUrl": "McDonald.png"
+    "PictureUrl": "McDonald.png",
+    "BackgroundUrl": "McDonaldBackground.jpg"
   },
   {
     "Name": "StarKebab",
-    "PictureUrl": "Starkebab.png"
+    "PictureUrl": "Starkebab.png",
+    "BackgroundUrl": "StarkebabBackground.jpg"
   },
   {
     "Name": "Pizza Palace",
-    "PictureUrl": "Pizza.jpg"
+    "PictureUrl": "Pizza.jpg",
+    "BackgroundUrl": "PizzaBackground.jpg"
   },
   {
     "Name": "Sushi Delight",
-    "PictureUrl": "Sushi.jpg"
+    "PictureUrl": "Sushi.jpg",
+    "BackgroundUrl": "SushiBackground.jpg"
   }
 ]

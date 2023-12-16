@@ -7,27 +7,33 @@
 
 @if (Restaurant != null)
 {
-    <div class="container bg-info mx-auto rounded-3">
+    <div class="container mx-auto rounded-3 custom-bg">
       <h1 class="fs-1 mb-5">Restaurants</h1>
-        <div class="row justify-content-center">
+        @* Grid start *@
+        <div class="container">
+            <div class="row">
                 @foreach (var item in Restaurant)
                 {
-                    <div class="image-container">
-                        <img src="images/Restaurants/@item.PictureUrl" alt="Your Image">
-                        <div class="text-container">
-                            <p>Your Text Here</p>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="color-container my-3">
+                            <img src="images/RestaurantsBackground/@item.BackgroundUrl" style="max-width: 100%; height: auto;  border-radius: 10px;"/>
+                            <a href="http://localhost:5208/restaurants/@item.Id"><div class="container-text fade-in">@item.Name</div></a>
                         </div>
                     </div>
                 }
+            </div>
         </div>
+        
     </div>
 }
 
 else{<p>Loading data...</p>}
 @code {
     List<Restaurants> Restaurant;
+
     protected override async Task OnInitializedAsync()
     {
         Restaurant = await RestRepo.GetAllAsync();
     }
+
 }

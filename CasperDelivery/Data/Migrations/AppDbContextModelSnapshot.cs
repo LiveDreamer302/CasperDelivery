@@ -139,8 +139,8 @@ namespace CasperDelivery.Data.Migrations
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
 
-                    b.Property<double>("TotalPrice")
-                        .HasColumnType("float");
+                    b.Property<decimal>("TotalPrice")
+                        .HasColumnType("money");
 
                     b.Property<string>("UserId")
                         .HasColumnType("nvarchar(450)");
@@ -169,8 +169,8 @@ namespace CasperDelivery.Data.Migrations
                     b.Property<string>("PictureUrl")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("Price")
-                        .HasColumnType("float");
+                    b.Property<decimal>("Price")
+                        .HasColumnType("money");
 
                     b.Property<int>("RestaurantId")
                         .HasColumnType("int");
@@ -189,6 +189,9 @@ namespace CasperDelivery.Data.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("BackgroundUrl")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");

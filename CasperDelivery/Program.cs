@@ -15,12 +15,15 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<AppDbContext>(x =>
 {
     x.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
-});
+}, ServiceLifetime.Transient);
+
 
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+builder.Services.AddTransient<NavBarService>();
 
 builder.Services.AddControllers();
 builder.Services.AddHttpClient();
+builder.Services.AddAuthorizationServices(builder.Configuration);
 
 var app = builder.Build();
 

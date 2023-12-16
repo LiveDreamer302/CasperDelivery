@@ -1,0 +1,39 @@
+﻿@page "/register"
+
+<div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card mt-5 shadow rounded">
+                    <div class="card-body">
+                        <h2 class="text-center">Register</h2>
+                        <form method="post">
+                            <div class="form-group">
+                                <label asp-for="Input.DisplayName"></label>
+                                <input asp-for="Input.DisplayName" class="form-control" placeholder="Display Name" type="text"/>
+                                <span asp-validation-for="Input.DisplayName" class="text-danger"></span>
+                                </div>
+                            <div class="form-group">
+                                <label asp-for="Input.Email"></label>
+                                <input asp-for="Input.Email" class="form-control" placeholder="Email" type="email"/>
+                                <span asp-validation-for="Input.Email" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Input.Password"></label>
+                                <input asp-for="Input.Password" class="form-control" placeholder="Password" type="password"/>
+                                <span asp-validation-for="Input.Password" class="text-danger"></span>
+                            </div>
+                            <div class="d-flex justify-content-end mb-2">
+                                <a href="/login">Login</a>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Register</button>
+                            <button type="submit" class="btn btn-light btn-block">Register with Google <i class="fa-brands fa-google"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+@code {
+    
+}

@@ -85,6 +85,26 @@
       "PackagePath": "staticwebassets\\images\\Logo\\logo-white.png"
     },
     {
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\RestaurantsBackground\\AndysBackground.png",
+      "PackagePath": "staticwebassets\\images\\RestaurantsBackground\\AndysBackground.png"
+    },
+    {
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\RestaurantsBackground\\McDonaldBackground.jpg",
+      "PackagePath": "staticwebassets\\images\\RestaurantsBackground\\McDonaldBackground.jpg"
+    },
+    {
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\RestaurantsBackground\\PizzaBackground.jpg",
+      "PackagePath": "staticwebassets\\images\\RestaurantsBackground\\PizzaBackground.jpg"
+    },
+    {
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\RestaurantsBackground\\StarkebabBackground.jpg",
+      "PackagePath": "staticwebassets\\images\\RestaurantsBackground\\StarkebabBackground.jpg"
+    },
+    {
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\RestaurantsBackground\\SushiBackground.jpg",
+      "PackagePath": "staticwebassets\\images\\RestaurantsBackground\\SushiBackground.jpg"
+    },
+    {
       "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Restaurants\\Andys.png",
       "PackagePath": "staticwebassets\\images\\Restaurants\\Andys.png"
     },

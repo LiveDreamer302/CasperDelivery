@@ -1,4 +1,28 @@
 /* _content/CasperDelivery/Components/Carousell.razor.rz.scp.css */
+/* _content/CasperDelivery/Pages/LoginPage.razor.rz.scp.css */
+.card[b-jpgfmr536q] {
+    border: none;
+}
+
+.card-body[b-jpgfmr536q] {
+    padding: 2rem;
+}
+
+.form-group[b-jpgfmr536q] {
+    margin-bottom: 1.5rem;
+}
+/* _content/CasperDelivery/Pages/RegisterPage.razor.rz.scp.css */
+.card[b-3ibz1srjv9] {
+    border: none;
+}
+
+.card-body[b-3ibz1srjv9] {
+    padding: 2rem;
+}
+
+.form-group[b-3ibz1srjv9] {
+    margin-bottom: 1.5rem;
+}
 /* _content/CasperDelivery/Pages/RestaurantDetails.razor.rz.scp.css */
 h1[b-cyjpsl0n28]{
     font-family: "Copperplate Gothic Light";
@@ -28,9 +52,58 @@ justify-content: center;
     padding: 10px; /* Padding around the text */
     text-align: center; /* Center align the text */
 }
+
+.custom-bg[b-n8gg9pmag4]{
+background-color: #f6f6ed;}
+
+.color-container[b-n8gg9pmag4] {
+    text-align: center;
+    border-radius: 10px;
+    min-height: 150px;
+    position: relative;
+}
+
+.color-container .container-text[b-n8gg9pmag4] {
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.8);
+    opacity: 0;
+    transition: opacity 0.8s;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: large;
+    font-style: italic;
+}
+
+.color-container:hover .container-text[b-n8gg9pmag4] {
+    opacity: 1;
+}
+
+.color-container .container-text.fade-in[b-n8gg9pmag4] {
+    animation: fadeIn-b-n8gg9pmag4 2s;
+}
+
+@keyframes fadeIn-b-n8gg9pmag4 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 /* _content/CasperDelivery/Shared/MainLayout.razor.rz.scp.css */
 .content[b-hnegp1hqmk]{
-background-color: #f6f6ed
+background-color: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    min-height: 78vh;
+    margin: 0;
 }
 /* _content/CasperDelivery/Shared/PageFooter.razor.rz.scp.css */
 .no-decorations[b-x86thgrsab]{
@@ -41,7 +114,8 @@ color: black;
 color: #ea744b; !important;}
 /* _content/CasperDelivery/Shared/TopMenu.razor.rz.scp.css */
 a[b-xo1z7isbm6]{
-color: #666770
+color: #666770;
+text-decoration: none;
 }
 nav[b-xo1z7isbm6]{
     -webkit-box-shadow: -1px 10px 39px 0px rgba(0,0,0,0.09);
