@@ -1,5 +1,5 @@
-﻿using System.Reflection;
-using CasperDelivery.Data.Models;
+﻿using CasperDelivery.Data.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -7,8 +7,7 @@ namespace CasperDelivery.Data;
 
 public class AppDbContext : IdentityDbContext<AppUser>
 {
-
-
+    
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
     {
     }

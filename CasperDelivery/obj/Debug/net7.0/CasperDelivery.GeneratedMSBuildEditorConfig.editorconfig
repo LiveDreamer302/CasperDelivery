@@ -10,6 +10,8 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CasperDelivery
 build_property.RootNamespace = CasperDelivery
 build_property.ProjectDir = C:\netprojects\Important\CasperDelivery\CasperDelivery\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
@@ -22,6 +24,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/netprojects/Important/CasperDelivery/CasperDelivery/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/netprojects/Important/CasperDelivery/CasperDelivery/Shared/LoginDisplay.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvZ2luRGlzcGxheS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/netprojects/Important/CasperDelivery/CasperDelivery/_Imports.razor]
@@ -59,6 +65,14 @@ build_metadata.AdditionalFiles.CssScope = b-x86thgrsab
 [C:/netprojects/Important/CasperDelivery/CasperDelivery/Shared/TopMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFRvcE1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-xo1z7isbm6
+
+[C:/netprojects/Important/CasperDelivery/CasperDelivery/Areas/Identity/Pages/Account/LogOut.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dPdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/netprojects/Important/CasperDelivery/CasperDelivery/Areas/Identity/Pages/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
 
 [C:/netprojects/Important/CasperDelivery/CasperDelivery/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
