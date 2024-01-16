@@ -1,16 +1,12 @@
-a[b-xo1z7isbm6]{
-color: #666770;
-text-decoration: none;
+a[b-xo1z7isbm6] {
+    color: #fff;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    text-decoration: none;
 }
 nav[b-xo1z7isbm6]{
     -webkit-box-shadow: -1px 10px 39px 0px rgba(0,0,0,0.09);
     -moz-box-shadow: -1px 10px 39px 0px rgba(0,0,0,0.09);
     box-shadow: -1px 10px 39px 0px rgba(0,0,0,0.09);}
-
-.navbar-toggler-icon[b-xo1z7isbm6]   {
-    color: gold;
-    background-color: #084298;
-}
 
 .logo-style[b-xo1z7isbm6]{
 width: 30px;
@@ -18,3 +14,16 @@ height: 30px;}
 
 .dark[b-xo1z7isbm6]{
 color: black;}
+
+
+.navbar[b-xo1z7isbm6] {
+    background-color: #435454;
+}
+
+.list-items[b-xo1z7isbm6]{
+    color: #435454
+}
+
+.list-item-image[b-xo1z7isbm6] {
+    border-radius: 25px 10px 20px 12px;
+}

@@ -87,10 +87,8 @@ C:\netprojects\Important\CasperDelivery\CasperDelivery\obj\Debug\net7.0\scopedcs
 C:\netprojects\Important\CasperDelivery\casperdelivery\obj\Debug\net7.0\scopedcss\Shared\PageFooter.razor.rz.scp.css
 C:\netprojects\Important\CasperDelivery\casperdelivery\obj\Debug\net7.0\scopedcss\Components\Carousell.razor.rz.scp.css
 C:\netprojects\Important\CasperDelivery\CasperDelivery\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-C:\netprojects\Important\CasperDelivery\CasperDelivery\obj\Debug\net7.0\scopedcss\Pages\LoginPage.razor.rz.scp.css
-C:\netprojects\Important\CasperDelivery\CasperDelivery\obj\Debug\net7.0\scopedcss\Pages\RegisterPage.razor.rz.scp.css
-C:\netprojects\Important\CasperDelivery\CasperDelivery\obj\Debug\net7.0\CasperDelivery.sourcelink.json
 C:\netprojects\Important\CasperDelivery\CasperDelivery\bin\Debug\net7.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
 C:\netprojects\Important\CasperDelivery\CasperDelivery\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.UI.dll
 C:\netprojects\Important\CasperDelivery\CasperDelivery\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Embedded.dll
 C:\netprojects\Important\CasperDelivery\CasperDelivery\obj\Debug\net7.0\CasperDelivery.MvcApplicationPartsAssemblyInfo.cs
+C:\netprojects\Important\CasperDelivery\CasperDelivery\obj\Debug\net7.0\scopedcss\Pages\Index.razor.rz.scp.css

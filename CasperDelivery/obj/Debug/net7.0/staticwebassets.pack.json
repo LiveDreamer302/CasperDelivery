@@ -57,16 +57,16 @@
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Carousel\\image1.jpg",
-      "PackagePath": "staticwebassets\\images\\Carousel\\image1.jpg"
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Carousel\\main-page-hero.png",
+      "PackagePath": "staticwebassets\\images\\Carousel\\main-page-hero.png"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Carousel\\image2.jpg",
-      "PackagePath": "staticwebassets\\images\\Carousel\\image2.jpg"
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Carousel\\main-page-hero2.png",
+      "PackagePath": "staticwebassets\\images\\Carousel\\main-page-hero2.png"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Carousel\\image3.jpg",
-      "PackagePath": "staticwebassets\\images\\Carousel\\image3.jpg"
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Logo\\casper-delivery-logo.png",
+      "PackagePath": "staticwebassets\\images\\Logo\\casper-delivery-logo.png"
     },
     {
       "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Logo\\logo-black.png",
@@ -79,6 +79,10 @@
     {
       "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Logo\\logo-no-background.png",
       "PackagePath": "staticwebassets\\images\\Logo\\logo-no-background.png"
+    },
+    {
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Logo\\logo-white-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\Logo\\logo-white-removebg-preview.png"
     },
     {
       "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Logo\\logo-white.png",

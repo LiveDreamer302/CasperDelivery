@@ -1,1 +1,25 @@
-﻿
+﻿.location-main{
+    height: 75vh;
+    width: 100vw;
+    filter: brightness(0.65);
+}
+.location-img{
+    height: 65vh;
+}
+.div-loc{
+    height:75vh;
+}
+.rel-div{
+    text-align: center;
+    color: whitesmoke;
+}
+.heading{
+    font-size: 10vh;
+    font-family: "Rockwell Condensed", cursive;
+    margin-bottom: 4vh;
+}
+.heading{
+    margin-bottom: 3vh;
+    width: 372px;
+    height: 150px;
+}

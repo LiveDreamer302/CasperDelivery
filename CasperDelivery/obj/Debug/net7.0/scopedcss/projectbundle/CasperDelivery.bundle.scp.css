@@ -1,27 +1,116 @@
 /* _content/CasperDelivery/Components/Carousell.razor.rz.scp.css */
-/* _content/CasperDelivery/Pages/LoginPage.razor.rz.scp.css */
-.card[b-jpgfmr536q] {
-    border: none;
+.location-main[b-l3o9vnm1tb]{
+    height: 75vh;
+    width: 100vw;
+    filter: brightness(0.65);
+}
+.location-img[b-l3o9vnm1tb]{
+    height: 65vh;
+}
+.div-loc[b-l3o9vnm1tb]{
+    height:75vh;
+}
+.rel-div[b-l3o9vnm1tb]{
+    text-align: center;
+    color: whitesmoke;
+}
+.heading[b-l3o9vnm1tb]{
+    font-size: 10vh;
+    font-family: "Rockwell Condensed", cursive;
+    margin-bottom: 4vh;
+}
+.heading[b-l3o9vnm1tb]{
+    margin-bottom: 3vh;
+    width: 372px;
+    height: 150px;
+}
+/* _content/CasperDelivery/Pages/Index.razor.rz.scp.css */
+.card-sizing[b-7g4map14mv]{
+    width: 200px;
+    border:none;
+}
+.card-image[b-7g4map14mv] {
+    border-radius: 135px 106px 134px 181px;
+    -webkit-border-radius: 135px 106px 134px 181px;
+    -moz-border-radius: 135px 106px 134px 181px;
+    height: 200px;
+}
+a[b-7g4map14mv] {
+    text-decoration: none;
 }
 
-.card-body[b-jpgfmr536q] {
-    padding: 2rem;
+.card-text-settings[b-7g4map14mv] {
+    background-color: #687676;
+    color: #fff;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    padding: 5px;
+    font-size: 2.5rem;
+    border-radius: 50px 30px;
 }
 
-.form-group[b-jpgfmr536q] {
-    margin-bottom: 1.5rem;
-}
-/* _content/CasperDelivery/Pages/RegisterPage.razor.rz.scp.css */
-.card[b-3ibz1srjv9] {
-    border: none;
+.custom-btn[b-7g4map14mv] {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #435454;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #435454;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #435454;
 }
 
-.card-body[b-3ibz1srjv9] {
-    padding: 2rem;
+    .custom-btn:hover[b-7g4map14mv] {
+        color: white;
+        box-shadow: inset 0 -100px 0 0 #435454;
+    }
+
+    .custom-btn:active[b-7g4map14mv] {
+        transform: scale(0.9);
+    }
+
+.columns-el[b-7g4map14mv]{
+    padding-left:100px;
 }
 
-.form-group[b-3ibz1srjv9] {
-    margin-bottom: 1.5rem;
+.contact-us[b-7g4map14mv]{
+    padding: 30px;
+    border-radius: 30px;
+    background-color: #435454;
+    color: #fff;
+}
+
+.submit-btn[b-7g4map14mv] {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #435454;
+}
+
+.submit-btn:hover[b-7g4map14mv] {
+    color: #435454;
+    box-shadow: inset 0 -100px 0 0 #fff;
+}
+
+.submit-btn:active[b-7g4map14mv] {
+    transform: scale(0.9);
 }
 /* _content/CasperDelivery/Pages/RestaurantDetails.razor.rz.scp.css */
 h1[b-cyjpsl0n28]{
@@ -106,26 +195,19 @@ background-color: #fdfdfd;
     margin: 0;
 }
 /* _content/CasperDelivery/Shared/PageFooter.razor.rz.scp.css */
-.no-decorations[b-x86thgrsab]{
-text-decoration: none;
-color: black;
+.border-top[b-x86thgrsab] {
+    border-top:solid
 }
-.no-decorations:hover[b-x86thgrsab] {
-color: #ea744b; !important;}
 /* _content/CasperDelivery/Shared/TopMenu.razor.rz.scp.css */
-a[b-xo1z7isbm6]{
-color: #666770;
-text-decoration: none;
+a[b-xo1z7isbm6] {
+    color: #fff;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    text-decoration: none;
 }
 nav[b-xo1z7isbm6]{
     -webkit-box-shadow: -1px 10px 39px 0px rgba(0,0,0,0.09);
     -moz-box-shadow: -1px 10px 39px 0px rgba(0,0,0,0.09);
     box-shadow: -1px 10px 39px 0px rgba(0,0,0,0.09);}
-
-.navbar-toggler-icon[b-xo1z7isbm6]   {
-    color: gold;
-    background-color: #084298;
-}
 
 .logo-style[b-xo1z7isbm6]{
 width: 30px;
@@ -133,3 +215,16 @@ height: 30px;}
 
 .dark[b-xo1z7isbm6]{
 color: black;}
+
+
+.navbar[b-xo1z7isbm6] {
+    background-color: #435454;
+}
+
+.list-items[b-xo1z7isbm6]{
+    color: #435454
+}
+
+.list-item-image[b-xo1z7isbm6] {
+    border-radius: 25px 10px 20px 12px;
+}

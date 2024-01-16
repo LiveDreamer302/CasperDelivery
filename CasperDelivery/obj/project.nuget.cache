@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "tO6dXxlrAezX2owUQapyQvqAA82w5tfLNqqNOguQVMZTeWFURSI0phTF7zCEGFLT1S06jNblIQ/VhH1sJMzNyw==",
+  "dgSpecHash": "ps/y+Z+ityC8jZgS5wFcXUUQRaDuFSMsnYnS2LCiqYJXtxQlz3PkbobYnGas7AaU5JbgUIYMASowdXQijclovA==",
   "success": true,
   "projectFilePath": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\CasperDelivery.csproj",
   "expectedPackageFiles": [
@@ -73,11 +73,7 @@
     "C:\\Users\\stefa\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\stefa\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
     "C:\\Users\\stefa\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "C:\\Users\\stefa\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
-    "C:\\Users\\stefa\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
-    "C:\\Users\\stefa\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
-    "C:\\Users\\stefa\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
-    "C:\\Users\\stefa\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.14\\microsoft.netcore.app.host.win-x64.7.0.14.nupkg.sha512"
+    "C:\\Users\\stefa\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

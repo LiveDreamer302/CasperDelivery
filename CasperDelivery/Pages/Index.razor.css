@@ -1,0 +1,87 @@
+﻿.card-sizing{
+    width: 200px;
+    border:none;
+}
+.card-image {
+    border-radius: 135px 106px 134px 181px;
+    -webkit-border-radius: 135px 106px 134px 181px;
+    -moz-border-radius: 135px 106px 134px 181px;
+    height: 200px;
+}
+a {
+    text-decoration: none;
+}
+
+.card-text-settings {
+    background-color: #687676;
+    color: #fff;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    padding: 5px;
+    font-size: 2.5rem;
+    border-radius: 50px 30px;
+}
+
+.custom-btn {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #435454;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #435454;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #435454;
+}
+
+    .custom-btn:hover {
+        color: white;
+        box-shadow: inset 0 -100px 0 0 #435454;
+    }
+
+    .custom-btn:active {
+        transform: scale(0.9);
+    }
+
+.columns-el{
+    padding-left:100px;
+}
+
+.contact-us{
+    padding: 30px;
+    border-radius: 30px;
+    background-color: #435454;
+    color: #fff;
+}
+
+.submit-btn {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #435454;
+}
+
+.submit-btn:hover {
+    color: #435454;
+    box-shadow: inset 0 -100px 0 0 #fff;
+}
+
+.submit-btn:active {
+    transform: scale(0.9);
+}

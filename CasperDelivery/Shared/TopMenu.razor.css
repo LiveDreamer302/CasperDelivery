@@ -1,16 +1,12 @@
-﻿a{
-color: #666770;
-text-decoration: none;
+﻿a {
+    color: #fff;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    text-decoration: none;
 }
 nav{
     -webkit-box-shadow: -1px 10px 39px 0px rgba(0,0,0,0.09);
     -moz-box-shadow: -1px 10px 39px 0px rgba(0,0,0,0.09);
     box-shadow: -1px 10px 39px 0px rgba(0,0,0,0.09);}
-
-.navbar-toggler-icon   {
-    color: gold;
-    background-color: #084298;
-}
 
 .logo-style{
 width: 30px;
@@ -18,3 +14,16 @@ height: 30px;}
 
 .dark{
 color: black;}
+
+
+.navbar {
+    background-color: #435454;
+}
+
+.list-items{
+    color: #435454
+}
+
+.list-item-image {
+    border-radius: 25px 10px 20px 12px;
+}
