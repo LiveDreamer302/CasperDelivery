@@ -3,6 +3,10 @@ a[b-xo1z7isbm6] {
     font-family: Comic Sans MS, Comic Sans, cursive;
     text-decoration: none;
 }
+a:hover[b-xo1z7isbm6] {
+    color: orange;
+}
+
 nav[b-xo1z7isbm6]{
     -webkit-box-shadow: -1px 10px 39px 0px rgba(0,0,0,0.09);
     -moz-box-shadow: -1px 10px 39px 0px rgba(0,0,0,0.09);
@@ -17,11 +21,11 @@ color: black;}
 
 
 .navbar[b-xo1z7isbm6] {
-    background-color: #435454;
+    background-color: #435454 !important
 }
 
 .list-items[b-xo1z7isbm6]{
-    color: #435454
+    color: #435454 !important;
 }
 
 .list-item-image[b-xo1z7isbm6] {

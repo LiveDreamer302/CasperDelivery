@@ -1,39 +1,35 @@
 ﻿@page "/restaurants"
-@using Data.Models
 @using CasperDelivery.Interfaces
+@using CasperDelivery.Interfaces.Specifications;
 @inject IGenericRepository<Restaurants> RestRepo
 
+<div class="background">
 
 
-@if (Restaurant != null)
+@if(Restaurant != null)
 {
-    <div class="container mx-auto rounded-3 custom-bg">
-      <h1 class="fs-1 mb-5">Restaurants</h1>
-        @* Grid start *@
-        <div class="container">
-            <div class="row">
-                @foreach (var item in Restaurant)
-                {
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="color-container my-3">
-                            <img src="images/RestaurantsBackground/@item.BackgroundUrl" style="max-width: 100%; height: auto;  border-radius: 10px;"/>
-                            <a href="/restaurants/@item.Id"><div class="container-text fade-in">@item.Name</div></a>
-                        </div>
-                    </div>
-                }
-            </div>
-        </div>
-        
-    </div>
+    @foreach(var item in Restaurant)
+    {
+        var imageUrl = "images/RestaurantsBackground/" + @item.BackgroundUrl;
+        <RestaurantComponent RestId=item.Id ImageUrl=@imageUrl RestaurantName="@item.Name" Product="@item.Products"></RestaurantComponent>
+    }
+
+}
+else
+{
+    <p>Loading</p>
 }
 
-else{<p>Loading data...</p>}
+</div>
+
+
 @code {
-    List<Restaurants> Restaurant;
+    IReadOnlyList<Restaurants> Restaurant;
 
     protected override async Task OnInitializedAsync()
     {
-        Restaurant = await RestRepo.GetAllAsync();
+        GetRestaurantWithProductSpecification spec = new GetRestaurantWithProductSpecification();
+        Restaurant = await RestRepo.ListAsync(spec);
     }
-
+    
 }

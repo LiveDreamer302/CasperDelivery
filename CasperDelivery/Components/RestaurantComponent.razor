@@ -1,0 +1,51 @@
+﻿<div class="container card-container text-center">
+<div class="restaurant-container">
+    <img src="@ImageUrl" class="img-fluid restaurant-img" />
+</div>
+<h1>@RestaurantName</h1>
+    <div class="container columns-el" style="width: 80vw;">
+        <div class="row">
+            @foreach(var item in productsList)
+            {
+            <div class="col-md-3 mb-3">
+                <div class="card card-sizing">
+                        <img src="images/products/@item.PictureUrl" class="card-img-top card-image img-fluid" alt="...">
+                    <div class="card-body text-center">
+                        <a href="/restaurants/@RestId"> <h4 class="card-text card-text-settings">@item.Name</h4></a>
+                    </div>
+                </div>
+            </div>
+            }
+            
+        </div>
+    </div>
+    <div class="container text-center">
+        <a class="custom-btn" href="/restaurants/@RestId">See More</a>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public int RestId { get; set; }
+    [Parameter]
+    public string RestaurantName { get; set; }
+    [Parameter]
+    public string ImageUrl { get; set; }
+    [Parameter]
+    public List<Products> Product { get; set; }
+    List<Products> productsList;
+
+    protected override void OnParametersSet()
+    {
+        if (Product.Count > 4)
+        {
+            productsList = Product.Take(4).ToList();
+        }
+        else
+        {
+            productsList = Product;
+        }
+    }
+
+
+}

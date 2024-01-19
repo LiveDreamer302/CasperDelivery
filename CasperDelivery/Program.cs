@@ -1,4 +1,5 @@
 using CasperDelivery.Areas.Identity;
+using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using CasperDelivery.Data;
@@ -8,13 +9,17 @@ using CasperDelivery.Services;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using CasperDelivery.EmailStuff;
+using Microsoft.AspNetCore.Identity.UI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+var configuration = builder.Configuration;
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddControllers();
+
 
 builder.Services.AddDefaultIdentity<AppUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<AppDbContext>();
@@ -28,7 +33,15 @@ builder.Services.AddDbContext<AppDbContext>(x =>
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<IdentityUser>>();
 builder.Services.AddTransient<NavBarService>();
+builder.Services.AddTransient<IEmailSender, EmailSender>();
+builder.Services.Configure<AuthMessageSenderOptions>(builder.Configuration);
 builder.Services.AddHttpClient();
+
+builder.Services.AddAuthentication().AddGoogle(googleOptions =>
+ {
+     googleOptions.ClientId = configuration["Authentication:Google:ClientId"];
+     googleOptions.ClientSecret = configuration["Authentication:Google:ClientSecret"];
+ });
 
 var app = builder.Build();
 

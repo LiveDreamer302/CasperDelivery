@@ -11,7 +11,7 @@ public class GetRestaurantWithProductSpecification : BaseSpecification<Restauran
         AddInclude(x => x.Products);
     }
 
-    public GetRestaurantWithProductSpecification()
+    public GetRestaurantWithProductSpecification() : base() 
     {
         AddInclude(x => x.Products);
     }

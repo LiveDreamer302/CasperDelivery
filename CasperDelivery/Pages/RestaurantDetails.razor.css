@@ -1,5 +1,85 @@
-﻿h1{
-    font-family: "Copperplate Gothic Light";
-    display: flex;
-    justify-content: center;
+﻿.restaurant-container {
+    height: 20vw;
+    width: 100%;
+}
+
+.restaurant-img {
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+    height: 100%;
+    width: 100%
+}
+
+.card-container {
+    height: auto;
+    background-color: #435454;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    padding: 0;
+}
+
+h1 {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    color: #fff;
+    font-size: 4rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*Cards*/
+.card-sizing {
+    width: 200px;
+    border: none;
+    background-color: #435454;
+}
+
+.card-image {
+    border-radius: 60px;
+    object-fit: cover;
+    height: 200px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card-text-settings {
+    background-color: #fff;
+    color: #435454;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    padding: 5px;
+    font-size: 2.5rem;
+    border-radius: 50px 30px;
+}
+
+.custom-btn {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #435454;
+}
+
+    .custom-btn:hover {
+        color: #435454;
+        box-shadow: inset 0 -100px 0 0 #fff;
+    }
+
+    .custom-btn:active {
+        transform: scale(0.9);
+    }
+
+.columns-el {
+    padding-left: 100px;
 }

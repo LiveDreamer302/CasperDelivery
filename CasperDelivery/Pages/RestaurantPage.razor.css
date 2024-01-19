@@ -65,3 +65,9 @@ background-color: #f6f6ed;}
         opacity: 1;
     }
 }
+
+.background {
+    width: 100%;
+    heigh: 100%;
+    background-image: url("/images/PageBackground/tile_background2.png");
+}

@@ -1,27 +1,35 @@
 ﻿@page "/restaurants/{RestaurantId}"
-@using Data.Models
 @using CasperDelivery.Interfaces
 @using CasperDelivery.Interfaces.Specifications
 @inject IGenericRepository<Restaurants> RestRepo
 
 @if(Restaurant != null){
-<h1>@Restaurant.Name</h1>
-    <img src="images\restaurants\@Restaurant.PictureUrl" width="500" height="500" alt="@Restaurant.Name"/>
-                                                                                                        
-    <div class="container bg-info mx-auto rounded-3">
-        <h1 class="fs-1 mb-5">Products</h1>
-        <div class="row justify-content-center">
-            @foreach (var item in Restaurant.Products)
-            {
-                <div class="image-container">
-                    <img src="images/Restaurants/@item.PictureUrl" alt="Your Image" class="img-fluid">
-                    <div class="text-container">
-                        <p>@item.Name</p>
-                    </div>
-                </div>
-            }
+    <div class="container card-container text-center">
+        <div class="restaurant-container">
+            <img src="/images/RestaurantsBackground/@Restaurant.BackgroundUrl" class="img-fluid restaurant-img" />
         </div>
-    </div>                                                                                                   
+        <h1>@Restaurant.Name</h1>
+        <div class="container columns-el" style="width: 80vw;">
+            <div class="row">
+                @foreach (var item in Restaurant.Products)
+                {
+                    <div class="col-md-3 mb-3">
+                        <div class="card card-sizing">
+                            <img src="images/products/@item.PictureUrl" class="card-img-top card-image img-fluid" alt="...">
+                            <div class="card-body text-center">
+                                <a href="/restaurants/@Restaurant.Id"> <h4 class="card-text card-text-settings">@item.Name</h4></a>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+        <div class="container text-center">
+            <a class="custom-btn" href="/restaurants/@Restaurant.Id">See More</a>
+        </div>
+    </div>
+                                                                                                  
 }
 
 
