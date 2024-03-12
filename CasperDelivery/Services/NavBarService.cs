@@ -18,4 +18,9 @@ public class NavBarService
     {
         return await _context.Restaurants.ToListAsync();
     }
+
+    public async Task<Basket> GetBasketAsync(string id)
+    {
+        return await _context.Basket.FirstOrDefaultAsync(x => x.UserId == id);
+    }
 }

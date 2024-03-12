@@ -72,9 +72,6 @@ namespace CasperDelivery.Data.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("DisplayName")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Email")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
@@ -128,6 +125,78 @@ namespace CasperDelivery.Data.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
+            modelBuilder.Entity("CasperDelivery.Data.Models.Basket", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId")
+                        .IsUnique()
+                        .HasFilter("[UserId] IS NOT NULL");
+
+                    b.ToTable("Basket");
+                });
+
+            modelBuilder.Entity("CasperDelivery.Data.Models.BasketItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("BasketId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BasketId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("BasketItem");
+                });
+
+            modelBuilder.Entity("CasperDelivery.Data.Models.OrderItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("OrderId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OrderId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("OrderItem");
+                });
+
             modelBuilder.Entity("CasperDelivery.Data.Models.Orders", b =>
                 {
                     b.Property<int>("Id")
@@ -139,6 +208,9 @@ namespace CasperDelivery.Data.Migrations
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
 
+                    b.Property<int?>("ProductsId")
+                        .HasColumnType("int");
+
                     b.Property<decimal>("TotalPrice")
                         .HasColumnType("money");
 
@@ -146,6 +218,8 @@ namespace CasperDelivery.Data.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ProductsId");
 
                     b.HasIndex("UserId");
 
@@ -284,10 +358,12 @@ namespace CasperDelivery.Data.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
                     b.Property<string>("LoginProvider")
-                        .HasColumnType("nvarchar(450)");
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
 
                     b.Property<string>("ProviderKey")
-                        .HasColumnType("nvarchar(450)");
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
 
                     b.Property<string>("ProviderDisplayName")
                         .HasColumnType("nvarchar(max)");
@@ -324,10 +400,12 @@ namespace CasperDelivery.Data.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("LoginProvider")
-                        .HasColumnType("nvarchar(450)");
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
 
                     b.Property<string>("Name")
-                        .HasColumnType("nvarchar(450)");
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
 
                     b.Property<string>("Value")
                         .HasColumnType("nvarchar(max)");
@@ -335,21 +413,6 @@ namespace CasperDelivery.Data.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
-                });
-
-            modelBuilder.Entity("OrdersProducts", b =>
-                {
-                    b.Property<int>("OrdersId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ProductsOrderedId")
-                        .HasColumnType("int");
-
-                    b.HasKey("OrdersId", "ProductsOrderedId");
-
-                    b.HasIndex("ProductsOrderedId");
-
-                    b.ToTable("OrdersProducts");
                 });
 
             modelBuilder.Entity("CasperDelivery.Data.Models.Address", b =>
@@ -361,10 +424,61 @@ namespace CasperDelivery.Data.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("CasperDelivery.Data.Models.Orders", b =>
+            modelBuilder.Entity("CasperDelivery.Data.Models.Basket", b =>
                 {
                     b.HasOne("CasperDelivery.Data.Models.AppUser", "User")
+                        .WithOne("Basket")
+                        .HasForeignKey("CasperDelivery.Data.Models.Basket", "UserId");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("CasperDelivery.Data.Models.BasketItem", b =>
+                {
+                    b.HasOne("CasperDelivery.Data.Models.Basket", "Basket")
+                        .WithMany("Items")
+                        .HasForeignKey("BasketId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CasperDelivery.Data.Models.Products", "Product")
                         .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Basket");
+
+                    b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("CasperDelivery.Data.Models.OrderItem", b =>
+                {
+                    b.HasOne("CasperDelivery.Data.Models.Orders", "Order")
+                        .WithMany("Items")
+                        .HasForeignKey("OrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CasperDelivery.Data.Models.Products", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Order");
+
+                    b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("CasperDelivery.Data.Models.Orders", b =>
+                {
+                    b.HasOne("CasperDelivery.Data.Models.Products", null)
+                        .WithMany("Orders")
+                        .HasForeignKey("ProductsId");
+
+                    b.HasOne("CasperDelivery.Data.Models.AppUser", "User")
+                        .WithMany("Orders")
                         .HasForeignKey("UserId");
 
                     b.Navigation("User");
@@ -432,24 +546,28 @@ namespace CasperDelivery.Data.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("OrdersProducts", b =>
-                {
-                    b.HasOne("CasperDelivery.Data.Models.Orders", null)
-                        .WithMany()
-                        .HasForeignKey("OrdersId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("CasperDelivery.Data.Models.Products", null)
-                        .WithMany()
-                        .HasForeignKey("ProductsOrderedId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("CasperDelivery.Data.Models.AppUser", b =>
                 {
                     b.Navigation("Address");
+
+                    b.Navigation("Basket");
+
+                    b.Navigation("Orders");
+                });
+
+            modelBuilder.Entity("CasperDelivery.Data.Models.Basket", b =>
+                {
+                    b.Navigation("Items");
+                });
+
+            modelBuilder.Entity("CasperDelivery.Data.Models.Orders", b =>
+                {
+                    b.Navigation("Items");
+                });
+
+            modelBuilder.Entity("CasperDelivery.Data.Models.Products", b =>
+                {
+                    b.Navigation("Orders");
                 });
 
             modelBuilder.Entity("CasperDelivery.Data.Models.Restaurants", b =>

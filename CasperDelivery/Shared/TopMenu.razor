@@ -4,6 +4,9 @@
 @using CasperDelivery.Data
 @using Microsoft.AspNetCore.Identity
 @using Microsoft.EntityFrameworkCore
+@using System.Security.Claims
+
+@inject AuthenticationStateProvider AuthenticationStateProvider
 @inject NavBarService service
 @inject SignInManager<AppUser> SignInManager
 
@@ -45,15 +48,33 @@
         <button class="btn btn-success" type="submit">Search</button>
       </form>
       </ul>
-      <LoginDisplay/>
+      <LoginDisplay BasketCount="ItemsCount"/>
     </div>
   </div>
 </nav>
 
 @code {
-  List<Restaurants> Restaurant = new List<Restaurants>();
-  protected override async Task OnInitializedAsync()
-  {
-    Restaurant = await service.GetAllAsync();
-  }
+    List<Restaurants> Restaurant = new List<Restaurants>();
+    Basket Basket = new Basket();
+    string UserId;
+    int ItemsCount = 0;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authenticationState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var user = authenticationState.User;
+
+        if (user.Identity.IsAuthenticated)
+        {
+            UserId = user.FindFirstValue(ClaimTypes.NameIdentifier);
+        }
+
+        Restaurant = await service.GetAllAsync();
+        Basket = await service.GetBasketAsync(UserId);
+
+        if (user.Identity.IsAuthenticated && Basket.Items != null)
+        {
+            ItemsCount = Basket.Items.Count;
+        }
+    }
 }

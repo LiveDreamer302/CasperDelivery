@@ -22,10 +22,6 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/netprojects/Important/CasperDelivery/CasperDelivery/Shared/LoginDisplay.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvZ2luRGlzcGxheS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/netprojects/Important/CasperDelivery/CasperDelivery/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -33,6 +29,10 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/netprojects/Important/CasperDelivery/CasperDelivery/Components/RestaurantComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSZXN0YXVyYW50Q29tcG9uZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-37u09hr0pb
+
+[C:/netprojects/Important/CasperDelivery/CasperDelivery/Pages/Cart.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FydC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-prmiz07ffw
 
 [C:/netprojects/Important/CasperDelivery/CasperDelivery/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
@@ -45,6 +45,10 @@ build_metadata.AdditionalFiles.CssScope = b-cyjpsl0n28
 [C:/netprojects/Important/CasperDelivery/CasperDelivery/Pages/RestaurantPage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzdGF1cmFudFBhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-n8gg9pmag4
+
+[C:/netprojects/Important/CasperDelivery/CasperDelivery/Shared/LoginDisplay.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvZ2luRGlzcGxheS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-uy7xf0yhq1
 
 [C:/netprojects/Important/CasperDelivery/CasperDelivery/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=

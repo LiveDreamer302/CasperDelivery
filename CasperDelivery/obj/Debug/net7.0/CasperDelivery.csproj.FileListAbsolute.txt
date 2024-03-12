@@ -79,7 +79,6 @@ C:\netprojects\Important\CasperDelivery\CasperDelivery\bin\Debug\net7.0\runtimes
 C:\netprojects\Important\CasperDelivery\CasperDelivery\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\netprojects\Important\CasperDelivery\CasperDelivery\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\netprojects\Important\CasperDelivery\CasperDelivery\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-C:\netprojects\Important\CasperDelivery\CasperDelivery\obj\Debug\net7.0\CasperDelivery.csproj.CopyComplete
 C:\netprojects\Important\CasperDelivery\casperdelivery\bin\Debug\net7.0\Data\SeedData\products.json
 C:\netprojects\Important\CasperDelivery\casperdelivery\bin\Debug\net7.0\Data\SeedData\restaurants.json
 C:\netprojects\Important\CasperDelivery\CasperDelivery\obj\Debug\net7.0\scopedcss\Pages\RestaurantPage.razor.rz.scp.css
@@ -274,3 +273,6 @@ C:\netprojects\Important\CasperDelivery\CasperDelivery\bin\Debug\net7.0\zh-Hans\
 C:\netprojects\Important\CasperDelivery\CasperDelivery\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\netprojects\Important\CasperDelivery\CasperDelivery\obj\Debug\net7.0\scopedcss\Components\RestaurantComponent.razor.rz.scp.css
 C:\netprojects\Important\CasperDelivery\CasperDelivery\obj\Debug\net7.0\CasperDelivery.sourcelink.json
+C:\netprojects\Important\CasperDelivery\CasperDelivery\obj\Debug\net7.0\scopedcss\Shared\LoginDisplay.razor.rz.scp.css
+C:\netprojects\Important\CasperDelivery\CasperDelivery\obj\Debug\net7.0\scopedcss\Pages\Cart.razor.rz.scp.css
+C:\netprojects\Important\CasperDelivery\CasperDelivery\obj\Debug\net7.0\CasperDe.E7F587C3.Up2Date

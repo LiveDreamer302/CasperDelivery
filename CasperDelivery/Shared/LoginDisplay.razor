@@ -1,6 +1,13 @@
 ﻿<AuthorizeView>
     <Authorized>
         <div class="d-flex align-items-center">
+            <div class="me-4 d-inline-block position-relative">
+                <a class="cart-link" href="/cart"><i class="oi oi-cart"></i></a>
+                @if(BasketCount > 0){
+                    <span class="cart-count">@BasketCount</span>
+                }
+            </div>
+            
             <a href="Identity/Account/Manage" class="btn btn-outline-primary">
                 Hello, @context.User.Identity?.Name! 
             </a>
@@ -18,3 +25,7 @@
         </div>
     </NotAuthorized>
 </AuthorizeView>
+ @code{
+     [Parameter]
+     public int BasketCount { get; set; }
+ }

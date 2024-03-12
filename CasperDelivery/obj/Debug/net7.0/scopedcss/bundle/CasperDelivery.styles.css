@@ -83,6 +83,184 @@ a[b-37u09hr0pb] {
 .columns-el[b-37u09hr0pb] {
     padding-left: 100px;
 }
+/* _content/CasperDelivery/Pages/Cart.razor.rz.scp.css */
+body[b-prmiz07ffw] {
+    background: #ddd;
+    min-height: 100vh;
+    vertical-align: middle;
+    display: flex;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.title[b-prmiz07ffw] {
+    margin-bottom: 5vh;
+}
+
+.card[b-prmiz07ffw] {
+    margin: auto;
+    max-width: 950px;
+    width: 90%;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 1rem;
+    border: transparent;
+}
+
+@media(max-width:767px) {
+    .card[b-prmiz07ffw] {
+        margin: 3vh auto;
+    }
+}
+
+.cart[b-prmiz07ffw] {
+    background-color: #fff;
+    padding: 4vh 5vh;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+@media(max-width:767px) {
+    .cart[b-prmiz07ffw] {
+        padding: 4vh;
+        border-bottom-left-radius: unset;
+        border-top-right-radius: 1rem;
+    }
+}
+
+.summary[b-prmiz07ffw] {
+    background-color: #ddd;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 4vh;
+    color: rgb(65, 65, 65);
+}
+
+@media(max-width:767px) {
+    .summary[b-prmiz07ffw] {
+        border-top-right-radius: unset;
+        border-bottom-left-radius: 1rem;
+    }
+}
+
+.summary .col-2[b-prmiz07ffw] {
+    padding: 0;
+}
+
+.summary .col-10[b-prmiz07ffw] {
+    padding: 0;
+}
+
+.row[b-prmiz07ffw] {
+    margin: 0;
+}
+
+.title b[b-prmiz07ffw] {
+    font-size: 1.5rem;
+}
+
+.main[b-prmiz07ffw] {
+    margin: 0;
+    padding: 2vh 0;
+    width: 100%;
+}
+
+.col-2[b-prmiz07ffw], .col[b-prmiz07ffw] {
+    padding: 0 1vh;
+}
+
+a[b-prmiz07ffw] {
+    padding: 0 1vh;
+}
+
+.close[b-prmiz07ffw] {
+    margin-left: auto;
+    font-size: 0.7rem;
+}
+
+img[b-prmiz07ffw] {
+    width: 3.5rem;
+}
+
+.back-to-shop[b-prmiz07ffw] {
+    margin-top: 4.5rem;
+}
+
+h5[b-prmiz07ffw] {
+    margin-top: 4vh;
+}
+
+hr[b-prmiz07ffw] {
+    margin-top: 1.25rem;
+}
+
+form[b-prmiz07ffw] {
+    padding: 2vh 0;
+}
+
+select[b-prmiz07ffw] {
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    padding: 1.5vh 1vh;
+    margin-bottom: 4vh;
+    outline: none;
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+}
+
+input[b-prmiz07ffw] {
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    padding: 1vh;
+    margin-bottom: 4vh;
+    outline: none;
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+}
+
+    input:focus[b-prmiz07ffw]::-webkit-input-placeholder {
+        color: transparent;
+    }
+
+.btn[b-prmiz07ffw] {
+    background-color: #000;
+    border-color: #000;
+    color: white;
+    width: 100%;
+    font-size: 0.7rem;
+    margin-top: 4vh;
+    padding: 1vh;
+    border-radius: 0;
+}
+
+    .btn:focus[b-prmiz07ffw] {
+        box-shadow: none;
+        outline: none;
+        box-shadow: none;
+        color: white;
+        -webkit-box-shadow: none;
+        -webkit-user-select: none;
+        transition: none;
+    }
+
+    .btn:hover[b-prmiz07ffw] {
+        color: white;
+    }
+
+a[b-prmiz07ffw] {
+    color: black;
+    text-decoration: none;
+}
+
+    a:hover[b-prmiz07ffw] {
+        color: black;
+        text-decoration: none;
+    }
+
+#code[b-prmiz07ffw] {
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.253), rgba(255, 255, 255, 0.185)), url("https://img.icons8.com/small/16/000000/long-arrow-right.png");
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: center;
+}
 /* _content/CasperDelivery/Pages/Index.razor.rz.scp.css */
 .card-sizing[b-7g4map14mv]{
     width: 200px;
@@ -331,6 +509,22 @@ background-color: #f6f6ed;}
     heigh: 100%;
     background-image: url("/images/PageBackground/tile_background2.png");
 }
+/* _content/CasperDelivery/Shared/LoginDisplay.razor.rz.scp.css */
+.cart-link[b-uy7xf0yhq1] {
+    color: white;
+    font-size: 25px;
+    margin-right: 4px;
+}
+.cart-count[b-uy7xf0yhq1] {
+    position: absolute;
+    top: -5px;
+    right: -5px; 
+    background-color: darkred;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
 /* _content/CasperDelivery/Shared/MainLayout.razor.rz.scp.css */
 .content[b-hnegp1hqmk]{
 background-color: #fdfdfd;
@@ -341,8 +535,8 @@ background-color: #fdfdfd;
     margin-top: 95px;
 }
 /* _content/CasperDelivery/Shared/PageFooter.razor.rz.scp.css */
-.border-top[b-x86thgrsab] {
-    border-top:solid
+.footer_el[b-x86thgrsab]{
+    width: 100vw;
 }
 /* _content/CasperDelivery/Shared/TopMenu.razor.rz.scp.css */
 a[b-xo1z7isbm6] {
