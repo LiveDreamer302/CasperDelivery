@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\CasperDelivery",
+    "\\CasperDelivery\\Pages"
   ],
-  "SelectedNode": "\\CasperDelivery.sln",
+  "SelectedNode": "\\CasperDelivery\\Pages\\Cart.razor",
   "PreviewInSolutionExplorer": false
 }

@@ -1,15 +1,12 @@
 ﻿using CasperDelivery.Data.Models;
-using EllipticCurve.Utils;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using System.Reflection.Emit;
 
 namespace CasperDelivery.Data;
 
 public class AppDbContext : IdentityDbContext<AppUser>
 {
-    
+
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
     {
     }
@@ -17,11 +14,11 @@ public class AppDbContext : IdentityDbContext<AppUser>
     public DbSet<Address> Address { get; set; }
     public DbSet<Orders> Orders { get; set; }
     public DbSet<Basket> Basket { get; set; }
-    public DbSet<BasketItem> BasketItems { get; set; }
+    public DbSet<BasketItem> BasketItem { get; set; }
     public DbSet<OrderItem> OrdersItems { get; set; }
     public DbSet<Products> Products { get; set; }
     public DbSet<Restaurants> Restaurants { get; set; }
-    
+
     protected override void OnModelCreating(ModelBuilder builder)
     {
         builder.Entity<AppUser>()

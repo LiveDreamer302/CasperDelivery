@@ -1,16 +1,13 @@
 using CasperDelivery.Areas.Identity;
-using Microsoft.AspNetCore.Authentication.Google;
-using Microsoft.AspNetCore.Components;
-using Microsoft.AspNetCore.Components.Web;
 using CasperDelivery.Data;
 using CasperDelivery.Data.Models;
+using CasperDelivery.EmailStuff;
 using CasperDelivery.Interfaces;
 using CasperDelivery.Services;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
-using CasperDelivery.EmailStuff;
 using Microsoft.AspNetCore.Identity.UI.Services;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
@@ -31,6 +28,7 @@ builder.Services.AddDbContext<AppDbContext>(x =>
 
 
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+builder.Services.AddScoped(typeof(ICartService), typeof(CartService));
 builder.Services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<IdentityUser>>();
 builder.Services.AddTransient<NavBarService>();
 builder.Services.AddTransient<IEmailSender, EmailSender>();

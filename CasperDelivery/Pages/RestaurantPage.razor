@@ -5,7 +5,6 @@
 
 <div class="background">
 
-
 @if(Restaurant != null)
 {
     @foreach(var item in Restaurant)
@@ -13,7 +12,6 @@
         var imageUrl = "images/RestaurantsBackground/" + @item.BackgroundUrl;
         <RestaurantComponent RestId=item.Id ImageUrl=@imageUrl RestaurantName="@item.Name" Product="@item.Products"></RestaurantComponent>
     }
-
 }
 else
 {

@@ -3,69 +3,66 @@
 @using CasperDelivery.WebModels;
 
 
+
 <PageTitle>Casper Delivery - Home</PageTitle>
 
 
-<div style="position: relative;">
-    <!-- SVG -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 720">
-        <path fill="#435454" fill-opacity="1" d="M0,528L90,512C180,496,360,464,540,464C720,464,900,496,1080,512C1260,528,1440,528,1620,496C1800,464,1980,416,2160,384L2160,0L1980,0C1800,0,1620,0,1440,0C1260,0,1080,0,900,0C720,0,540,0,360,0C180,0,0,0,0,0L0,0Z"></path>
-    </svg>
-
-    <!-- Overlay content -->
-    <div style="position: absolute; top: 10%; left: 14%; transform: translate(-50%, -50%); z-index: 1; transform: scale(0.8)">
-        <img src="images/Carousel/main-page-hero2.png" style="max-width: 100%; height: auto;" />
-    </div>
-
-    <div style="position: absolute; top: 35%; left: 80%; transform: translate(-50%, -50%); z-index: 1;">
-        <h1 style="color: #fff; font-family:Brush Script MT, Brush Script Std, cursive; font-size: 5rem">Savor the moment, delivered to you.<i class="oi oi-heart" style="font-size:3rem"></i></h1>
-    </div>
-
-    <div style="position: absolute; top: 90%; left: 50%; transform: translate(-50%, -50%); z-index: 1;">
-        <h2 style="color: #435454; font-family:Brush Script MT, Brush Script Std, cursive; font-size: 5rem">Your beloved restaurants</h2>
-    </div>
-
-</div>
-
-<div class="container columns-el" style="width: 80vw;">
-    <div class="row">
-        <div class="col-md-3 mb-3">
-            <div class="card card-sizing">
-                <img src="images/Restaurants/Andys.png" class="card-img-top card-image" alt="...">
-                <div class="card-body text-center">
-                   <a href="/restaurants/1" <h4 class="card-text card-text-settings">Andy's</h4></a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 mb-3">
-            <div class="card card-sizing">
-                <img src="images/Restaurants/Sushi.jpg" class="card-img-top card-image" alt="...">
-                <div class="card-body text-center">
-                 <a href="/restaurants/5"   <h4 class="card-text card-text-settings">Sushi De..</h4> </a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 mb-3">
-            <div class="card card-sizing">
-                <img src="images/Restaurants/Pizza.jpg" class="card-img-top card-image" alt="...">
-                <div class="card-body text-center">
-                   <a href="/restaurants/4" <h4 class="card-text card-text-settings">Pizza Pa..</h4> </a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 mb-3">
-            <div class="card card-sizing">
-                <img src="images/Restaurants/Starkebab.png" class="card-img-top card-image" alt="...">
-                <div class="card-body text-center">
-                  <a href="/restaurants/3"  <h4 class="card-text card-text-settings">StarKebab</h4> </a>
+<div class="hero-area hero-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 offset-lg-2 text-center">
+                <div class="hero-text">
+                    <div class="hero-text-tablecell">
+                        <p class="subtitle">Bold & Delicious</p>
+                        <h1>Savor the moment, delivered to you</h1>
+                        <div class="hero-btns">
+                            <a href="/restaurants" class="boxed-btn">All Restaurants</a>
+                            <a href="contact.html" class="bordered-btn">Contact Us</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="container text-center">
-   <a class="custom-btn" href="/restaurants">See More</a>
+
+<h2 class="text-center mt-3">Reviews</h2>
+<div id="carouselExampleAutoplaying" class="carousel slide p-4 container mt-3 carousel-div" data-bs-ride="carousel" data-bs-interval="5000">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="carousel-content text-center">
+                <h3>Fantastic Service and Variety!</h3>
+                <p>I absolutely love ordering from this food delivery service! The variety of restaurants available is fantastic, and the delivery is always prompt. The website is easy to navigate, and the food arrives hot and delicious. Highly recommended!</p>
+                <p><em>Arthur Morgan</em></p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="carousel-content text-center">
+                <h3>Impressed Every Time!</h3>
+                <p>I've been using this food delivery service for a while now, and I'm always impressed with the quality of the food and the speed of delivery. The website is user-friendly, and I love being able to track my order in real-time. Great service overall!</p>
+                <p><em>John Marston</em></p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="carousel-content text-center">
+                <h3>Exceptional Experience!</h3>
+                <p>I recently tried this food delivery service for the first time, and I was blown away by the experience. The website was easy to use, and the delivery was right on time. The food was absolutely delicious, and I will definitely be ordering from them again!</p>
+                <p><em>Dutch Van Der Linde</em></p>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 </div>
+
+
+
 
 <div class="container mt-5 contact-us">
     <div class="row align-items-center">
@@ -73,31 +70,29 @@
             <h2>Contact Us</h2>
         </div>
         <div class="col-md-8">
-            <form method="post" class="d-flex justify-content-between flex-column">
+            <form class="d-flex justify-content-between flex-column">
                 <div class="form-group">
                     <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" class="form-control" asp-for="Contact.Name" />
-                    <span asp-validation-for="Contact.Name" class="text-danger"></span>
+                    <input type="text" id="name" name="name" class="form-control" @bind="Contact.Name" />
+                    <span class="text-danger">@validationMessages.Name</span>
                 </div>
 
                 <div class="form-group">
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" class="form-control" asp-for="Contact.Email" />
-                    <span asp-validation-for="Contact.Email" class="text-danger"></span>
+                    <input type="email" id="email" name="email" class="form-control" @bind="Contact.Email" />
+                    <span class="text-danger">@validationMessages.Email</span>
                 </div>
 
                 <div class="form-group">
                     <label for="message">Message:</label>
-                    <textarea id="message" name="message" class="form-control" asp-for="Contact.Message"></textarea>
-                    <span asp-validation-for="Contact.Message" class="text-danger"></span>
+                    <textarea id="message" name="message" class="form-control" @bind="Contact.Message"></textarea>
+                    <span class="text-danger">@validationMessages.Message</span>
                 </div>
 
-                <button type="submit" class="submit-btn align-self-center">Submit</button>
+                <button type="button" class="submit-btn align-self-center" @onclick="SubmitForm">Submit</button>
+                <span class="text-success text-center">@submitMessage</span>
             </form>
         </div>
     </div>
 </div>
-
-
-
 

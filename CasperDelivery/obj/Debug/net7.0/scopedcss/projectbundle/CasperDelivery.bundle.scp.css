@@ -262,9 +262,193 @@ a[b-prmiz07ffw] {
     background-position-y: center;
 }
 /* _content/CasperDelivery/Pages/Index.razor.rz.scp.css */
-.card-sizing[b-7g4map14mv]{
+h1[b-7g4map14mv], .h1[b-7g4map14mv] {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+@media only screen and (max-width: 767.96px) {
+    h1[b-7g4map14mv], .h1[b-7g4map14mv] {
+        font-size: 3rem;
+        line-height: 3.25rem;
+    }
+}
+
+@media only screen and (max-width: 575.96px) {
+    h1[b-7g4map14mv], .h1[b-7g4map14mv] {
+        font-size: 2.5rem;
+        line-height: 2.75rem;
+    }
+}
+
+h2[b-7g4map14mv], .h2[b-7g4map14mv] {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.25rem;
+}
+
+@media only screen and (max-width: 767.96px) {
+    h2[b-7g4map14mv], .h2[b-7g4map14mv] {
+        font-size: 2.5rem;
+        line-height: 2.75rem;
+    }
+}
+
+@media only screen and (max-width: 575.96px) {
+    h2[b-7g4map14mv], .h2[b-7g4map14mv] {
+        font-size: 2rem;
+        line-height: 2.25rem;
+    }
+}
+.hero-text[b-7g4map14mv] {
+    display: table;
+    height: 100%;
+}
+
+
+
+.hero-text-tablecell[b-7g4map14mv] {
+    display: table-cell;
+}
+
+
+.hero-area[b-7g4map14mv] {
+    height: 75vh;
+    position: relative;
+    z-index: 1;
+}
+    .hero-area[b-7g4map14mv]:after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        z-index: -1;
+        opacity: 0.6;
+    }
+
+.hero-text p.subtitle[b-7g4map14mv] {
+    color: orange;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-size: 15px;
+}
+
+.hero-text h1[b-7g4map14mv] {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #fff;
+}
+
+.hero-area div[b-7g4map14mv] {
+    height: 100%;
+}
+
+    .hero-area div.hero-text[b-7g4map14mv] {
+        height: 100%;
+        width: 100%;
+    }
+
+    .hero-area div.hero-text-tablecell[b-7g4map14mv] {
+        height: auto;
+        vertical-align: middle;
+    }
+
+        .hero-area div.hero-text-tablecell div[b-7g4map14mv] {
+            height: auto;
+            vertical-align: middle;
+        }
+
+.hero-bg[b-7g4map14mv] {
+    background-color: #435454 !important;
+}
+
+.hero-btns[b-7g4map14mv] {
+    margin-top: 35px;
+}
+
+    .hero-btns a.bordered-btn[b-7g4map14mv] {
+        margin-left: 15px;
+    }
+
+.hero-area div.hero-form[b-7g4map14mv] {
+    text-align: center;
+    width: 380px;
+    margin: 0 auto;
+    margin-right: 0;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 15px #2d2d2d;
+    box-shadow: 0 0 15px #2d2d2d;
+    position: absolute;
+    right: 30px;
+    bottom: -15%;
+    height: 600px;
+}
+
+a.boxed-btn[b-7g4map14mv] {
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    background-color: #F28123;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+a.bordered-btn[b-7g4map14mv] {
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    color: #fff;
+    border: 2px solid #F28123;
+    padding: 7px 20px;
+}
+a.boxed-btn[b-7g4map14mv], a.bordered-btn[b-7g4map14mv] {
+    border-radius: 50px;
+}
+
+a.boxed-btn[b-7g4map14mv] {
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+    a.boxed-btn:hover[b-7g4map14mv] {
+        background-color: #051922;
+        color: #F28123;
+    }
+
+a.bordered-btn[b-7g4map14mv] {
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+    a.bordered-btn:hover[b-7g4map14mv] {
+        background-color: #F28123;
+        color: #fff;
+    }
+
+.single-logo-item img[b-7g4map14mv] {
+    max-width: 180px;
+    margin: 0 auto;
+}
+
+.carousel-div[b-7g4map14mv] {
+    font-family: 'Poppins', sans-serif;
+    background-color: #435454;
+    color: white;
+    border-radius: 30px;
+}
+
+h2[b-7g4map14mv] {
+    font-family: 'Poppins', sans-serif;
+}
+/*==============================================================================================*/
+.card-sizing[b-7g4map14mv] {
     width: 200px;
-    border:none;
+    border: none;
 }
 .card-image[b-7g4map14mv] {
     border-radius: 135px 106px 134px 181px;
@@ -349,92 +533,116 @@ a[b-7g4map14mv] {
 .submit-btn:active[b-7g4map14mv] {
     transform: scale(0.9);
 }
+
+
 /* _content/CasperDelivery/Pages/RestaurantDetails.razor.rz.scp.css */
-.restaurant-container[b-cyjpsl0n28] {
-    height: 20vw;
-    width: 100%;
+.single-product-item[b-cyjpsl0n28] {
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
 }
 
-.restaurant-img[b-cyjpsl0n28] {
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
-    height: 100%;
-    width: 100%
-}
-
-.card-container[b-cyjpsl0n28] {
-    height: auto;
-    background-color: #435454;
-    margin-top: 20px;
+    .single-product-item:hover[b-cyjpsl0n28] {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+.single-product-item[b-cyjpsl0n28] {
     margin-bottom: 30px;
-    border-radius: 20px;
-    padding: 0;
+}
+    .single-product-item h3[b-cyjpsl0n28] {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+.single-product-item[b-cyjpsl0n28] {
+    -webkit-box-shadow: 0 0 20px #e4e4e4;
+    box-shadow: 0 0 20px #e4e4e4;
+    padding-bottom: 50px;
+    border-radius: 5px;
+}
+button.cart-btn[b-cyjpsl0n28] {
+    border-radius: 50px;
+    margin-bottom: 15px;
 }
 
-h1[b-cyjpsl0n28] {
-    font-family: Comic Sans MS, Comic Sans, cursive;
-    color: #fff;
-    font-size: 4rem;
-    margin-top: 20px;
-    margin-bottom: 20px;
+button.cart-btn[b-cyjpsl0n28] {
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
 }
 
-/*Cards*/
-.card-sizing[b-cyjpsl0n28] {
-    width: 200px;
-    border: none;
-    background-color: #435454;
-}
+    button.cart-btn:hover[b-cyjpsl0n28] {
+        background-color: #051922;
+        color: #F28123;
+    }
 
-.card-image[b-cyjpsl0n28] {
-    border-radius: 60px;
-    object-fit: cover;
-    height: 200px;
-}
-
-a[b-cyjpsl0n28] {
-    text-decoration: none;
-}
-
-.card-text-settings[b-cyjpsl0n28] {
-    background-color: #fff;
-    color: #435454;
-    font-family: Brush Script MT, Brush Script Std, cursive;
-    padding: 5px;
-    font-size: 2.5rem;
-    border-radius: 50px 30px;
-}
-
-.custom-btn[b-cyjpsl0n28] {
-    position: relative;
+button.cart-btn[b-cyjpsl0n28] {
+    font-family: 'Poppins', sans-serif;
     display: inline-block;
-    margin: 15px;
-    padding: 15px 30px;
-    text-align: center;
-    font-size: 18px;
-    letter-spacing: 1px;
-    text-decoration: none;
+    background-color: #F28123;
     color: #fff;
-    background: transparent;
-    cursor: pointer;
-    transition: ease-out 0.5s;
-    border: 2px solid #fff;
-    border-radius: 10px;
-    box-shadow: inset 0 0 0 0 #435454;
+    padding: 10px 20px;
+    text-decoration: none;
+    border:none;
 }
 
-    .custom-btn:hover[b-cyjpsl0n28] {
-        color: #435454;
-        box-shadow: inset 0 -100px 0 0 #fff;
+    button.cart-btn i[b-cyjpsl0n28] {
+        margin-right: 5px;
     }
 
-    .custom-btn:active[b-cyjpsl0n28] {
-        transform: scale(0.9);
-    }
-
-.columns-el[b-cyjpsl0n28] {
-    padding-left: 100px;
+.product-image img[b-cyjpsl0n28] {
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
 }
+
+    .product-image img:hover[b-cyjpsl0n28] {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+.product-image[b-cyjpsl0n28] {
+    padding: 30px;
+    padding-bottom: 0;
+}
+
+    .product-image img[b-cyjpsl0n28] {
+        width: 90%;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+td.product-image img[b-cyjpsl0n28] {
+    max-width: 50px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-bottom: 0;
+}
+.product-price[b-cyjpsl0n28]{
+    font-size:large;
+}
+
+.blur-background[b-cyjpsl0n28] {
+    position: relative;
+    z-index: 1;
+    font-size: 4rem;
+    padding: 25px;
+}
+
+    .blur-background[b-cyjpsl0n28]:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 10, 0.5);
+        filter: blur(3px);
+        -webkit-filter: blur(5px);
+        z-index: -1;
+        border-radius: 20px;
+        border:solid;
+    }
 /* _content/CasperDelivery/Pages/RestaurantPage.razor.rz.scp.css */
 h1[b-n8gg9pmag4]{
 font-family: "Copperplate Gothic Light";
@@ -525,6 +733,38 @@ background-color: #f6f6ed;}
     padding: 2px 6px;
     font-size: 12px;
 }
+
+.login[b-uy7xf0yhq1] {
+    padding: 10px 13px;
+    text-decoration: none;
+    color: white;
+}
+.login:hover[b-uy7xf0yhq1]{
+    color: orange;
+}
+
+a.bordered-btn[b-uy7xf0yhq1] {
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    color: #fff;
+    border: 2px solid #F28123;
+    padding: 7px 20px;
+    text-decoration:none;
+}
+a.boxed-btn[b-uy7xf0yhq1], a.bordered-btn[b-uy7xf0yhq1] {
+    border-radius: 50px;
+}
+
+a.bordered-btn[b-uy7xf0yhq1] {
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+    a.bordered-btn:hover[b-uy7xf0yhq1] {
+        background-color: #F28123;
+        color: #fff;
+    }
 /* _content/CasperDelivery/Shared/MainLayout.razor.rz.scp.css */
 .content[b-hnegp1hqmk]{
 background-color: #fdfdfd;
@@ -538,16 +778,22 @@ background-color: #fdfdfd;
 .footer_el[b-x86thgrsab]{
     width: 100vw;
 }
+a[b-x86thgrsab] {
+    text-decoration: none;
+    color:white;
+}
 /* _content/CasperDelivery/Shared/TopMenu.razor.rz.scp.css */
 a[b-xo1z7isbm6] {
     color: #fff;
-    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-family: "Poppins", sans-serif;
     text-decoration: none;
+}
+a:visited[b-xo1z7isbm6]{
+    color:#fff;
 }
 a:hover[b-xo1z7isbm6] {
     color: orange;
 }
-
 nav[b-xo1z7isbm6]{
     -webkit-box-shadow: -1px 10px 39px 0px rgba(0,0,0,0.09);
     -moz-box-shadow: -1px 10px 39px 0px rgba(0,0,0,0.09);
@@ -570,5 +816,5 @@ color: black;}
 }
 
 .list-item-image[b-xo1z7isbm6] {
-    border-radius: 25px 10px 20px 12px;
+    border-radius: 5px;
 }

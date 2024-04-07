@@ -1,4 +1,5 @@
-﻿namespace CasperDelivery.Data.Models
+﻿
+namespace CasperDelivery.Data.Models
 {
     public class BasketItem : BaseEntity
     {

@@ -1,10 +1,9 @@
 ﻿using CasperDelivery.Data.Models;
 using CasperDelivery.Interfaces.Specification;
-using Microsoft.AspNetCore.Mvc;
 
 namespace CasperDelivery.Interfaces;
 
-public interface IGenericRepository<T> where T :BaseEntity
+public interface IGenericRepository<T> where T : BaseEntity
 {
     Task<List<T>> GetAllAsync();
     Task<T> GetOneAsync(int id);
@@ -12,4 +11,5 @@ public interface IGenericRepository<T> where T :BaseEntity
     Task<IReadOnlyList<T>> ListAsync(ISpecification<T> spec);
     Task DeleteAsync(int id);
     Task CreateAsync(T item);
+    Task UpdateAsync();
 }

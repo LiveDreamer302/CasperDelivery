@@ -1,13 +1,14 @@
-﻿//using CasperDelivery.Data.Models;
-//using CasperDelivery.Interfaces.Specification;
+﻿using CasperDelivery.Data.Models;
+using CasperDelivery.Interfaces.Specification;
 
-//namespace CasperDelivery.Interfaces.Specifications
-//{
-//    public class GetBasketWithItemsSpecification : BaseSpecification<Basket>
-//    {
-//        public GetBasketWithItemsSpecification(int id) : base(x => x.Id == id)
-//        {
-//            AddInclude(x => x.Items);
-//        }
-//    }
-//}
+namespace CasperDelivery.Interfaces.Specifications
+{
+    public class GetBasketWithItemsSpecification : BaseSpecification<BasketItem>
+    {
+        public GetBasketWithItemsSpecification(string userId) : base(x => x.UserId == userId)
+        {
+            AddInclude(x => x.Items);
+            AddInclude(x => x.);            
+        }
+    }
+}

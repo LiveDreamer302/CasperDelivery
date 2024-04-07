@@ -13,3 +13,35 @@
     padding: 2px 6px;
     font-size: 12px;
 }
+
+.login {
+    padding: 10px 13px;
+    text-decoration: none;
+    color: white;
+}
+.login:hover{
+    color: orange;
+}
+
+a.bordered-btn {
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    color: #fff;
+    border: 2px solid #F28123;
+    padding: 7px 20px;
+    text-decoration:none;
+}
+a.boxed-btn, a.bordered-btn {
+    border-radius: 50px;
+}
+
+a.bordered-btn {
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+    a.bordered-btn:hover {
+        background-color: #F28123;
+        color: #fff;
+    }

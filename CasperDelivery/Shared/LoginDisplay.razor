@@ -8,20 +8,18 @@
                 }
             </div>
             
-            <a href="Identity/Account/Manage" class="btn btn-outline-primary">
-                Hello, @context.User.Identity?.Name! 
+            <a href="Identity/Account/Manage"  class="login">
+                <span class="oi oi-person"></span>
             </a>
             <div style="width: 10px;"></div> 
             <form method="post" action="Identity/Account/Logout" class="ml-3">
-                <button type="submit" class="btn btn-danger">Log out <i class="oi oi-account-logout"></i></button>
+                <button type="submit" class="btn login"><i class="oi oi-account-logout"></i></button>
             </form>
         </div>
     </Authorized>
     <NotAuthorized>
         <div class="d-flex justify-content-between">
-            <a href="Identity/Account/Register" class="btn btn-primary">Register</a>
-            <div style="width: 10px;"></div> 
-            <a href="Identity/Account/Login" class="btn btn-secondary">Log in <i class="oi oi-account-login"></i></a>
+            <a href="Identity/Account/Login" class="bordered-btn">Log in <i class="oi oi-account-login"></i></a>
         </div>
     </NotAuthorized>
 </AuthorizeView>

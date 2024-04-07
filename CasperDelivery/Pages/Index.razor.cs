@@ -1,8 +1,10 @@
 using CasperDelivery.WebModels;
+using Microsoft.AspNetCore.Components;
+using System.Timers;
 
 namespace CasperDelivery.Pages
 {
-    public partial class Index
+    public partial class Index 
     {
         private ContactForm Contact = new ContactForm();
         private ValidationMessages validationMessages = new ValidationMessages();

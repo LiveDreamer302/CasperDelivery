@@ -2,7 +2,6 @@
 using CasperDelivery.Data.Models;
 using CasperDelivery.Interfaces;
 using CasperDelivery.Interfaces.Specification;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace CasperDelivery.Services;
@@ -15,16 +14,16 @@ public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
     {
         _context = context;
     }
-    
+
     public async Task<List<T>> GetAllAsync()
     {
         return await _context.Set<T>().ToListAsync();
-        }
+    }
 
     public async Task<T> GetOneAsync(int id)
     {
-        var restaurant = await _context.Set<T>().FirstOrDefaultAsync(x => x.Id == id);
-        return restaurant;
+        var item = await _context.Set<T>().FirstOrDefaultAsync(x => x.Id == id);
+        return item;
     }
 
 
@@ -40,7 +39,7 @@ public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
         _context.Set<T>().Add(item);
         await _context.SaveChangesAsync();
     }
-    
+
     public async Task<T> GetEntityWithSpecAsync(ISpecification<T> spec)
     {
         return await ApplySpecification(spec).FirstOrDefaultAsync();
@@ -51,9 +50,20 @@ public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
         return await ApplySpecification(spec).ToListAsync();
     }
 
+    public async Task<IList<T>> GetProductsInBasketAsync(ISpecification<T> spec)
+    {
+        return await ApplySpecification(spec).ToListAsync();
+    }
+
+
     private IQueryable<T> ApplySpecification(ISpecification<T> spec)
     {
         return SpecificationEvaluator<T>.GetQuery(_context.Set<T>().AsQueryable(), spec);
     }
-    
+
+    public async Task UpdateAsync()
+    {
+        await _context.SaveChangesAsync();
+    }
+
 }

@@ -1,51 +1,54 @@
 ﻿@page "/restaurants/{RestaurantId}"
 @using CasperDelivery.Interfaces
 @using CasperDelivery.Interfaces.Specifications
-@inject IGenericRepository<Restaurants> RestRepo
+@inject ICartService cartService
 
-@if(Restaurant != null){
-    <div class="container card-container text-center">
-        <div class="restaurant-container">
-            <img src="/images/RestaurantsBackground/@Restaurant.BackgroundUrl" class="img-fluid restaurant-img" />
-        </div>
-        <h1>@Restaurant.Name</h1>
-        <div class="container columns-el" style="width: 80vw;">
-            <div class="row">
-                @foreach (var item in Restaurant.Products)
-                {
-                    <div class="col-md-3 mb-3">
-                        <div class="card card-sizing">
-                            <img src="images/products/@item.PictureUrl" class="card-img-top card-image img-fluid" alt="...">
-                            <div class="card-body text-center">
-                                <a href="/restaurants/@Restaurant.Id"> <h4 class="card-text card-text-settings">@item.Name</h4></a>
-                            </div>
+@if(Restaurant != null)
+{
+
+    <div class="bg-image d-flex justify-content-center align-items-center"
+         style="
+         background-image: url('images/Restaurantsbackground/@Restaurant.BackgroundUrl');
+         height: 40vh;
+      ">
+        <h1 class="text-white blur-background">@Restaurant.Name</h1>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row product-lists">
+            @foreach (var item in Restaurant.Products)
+            {
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="single-product-item">
+                        <div class="product-image">
+                            <img src="images/Products/@item.PictureUrl" alt="" style="width: 200px; height: 200px; object-fit: cover;" />
                         </div>
+                        <h3>@item.Name</h3>
+                        <p class="product-price">@String.Format("{0:0.00}", item.Price) $</p>
+                        <AuthorizeView>
+                            <Authorized>
+                                <button onclick="@(async () => await cartService.AddItemToCart(item.Id))" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            </Authorized>
+                            <NotAuthorized>
+                                <p>You need to enter your account to add item to cart</p>
+                            </NotAuthorized>
+                        </AuthorizeView>
+                        
                     </div>
-                }
-
-            </div>
-        </div>
-        <div class="container text-center">
-            <a class="custom-btn" href="/restaurants/@Restaurant.Id">See More</a>
+                </div>
+            }
         </div>
     </div>
-                                                                                                  
+
 }
-
-
-
 @code {
     [Parameter]
     public string RestaurantId { get; set; }
-
 
     Restaurants Restaurant;
     protected override async Task OnParametersSetAsync()
     {
         int Id = int.Parse(RestaurantId);
-        GetRestaurantWithProductSpecification spec = new GetRestaurantWithProductSpecification(Id);
-        Restaurant = await RestRepo.GetEntityWithSpecAsync(spec);
+        Restaurant = await cartService.GetRestaurantInfo(Id);
     }
-    
-
 }
