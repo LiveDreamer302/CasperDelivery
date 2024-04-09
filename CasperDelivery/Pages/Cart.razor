@@ -2,39 +2,57 @@
 @using CasperDelivery.Interfaces
 @using CasperDelivery.Interfaces.Specifications
 @using System.Security.Claims
-@inject IGenericRepository<Basket> basketRepo
+@using CasperDelivery.Interfaces.Repositories
+@inject ICartRepository basketRepo
+@inject IGenericRepository<BasketItem> basketItemRepo
 @inject ICartService cartService
 @inject AuthenticationStateProvider _authenticationStateProvider;
 
 
 @if (_basket != null)
 {
-    <div class="card">
+    <div class="card mt-4 mb-3">
         <div class="row">
             <div class="col-md-8 cart">
                 <div class="title">
                     <div class="row">
                         <div class="col"><h4><b>Shopping Cart</b></h4></div>
-                        <div class="col align-self-center text-right text-muted">3 items</div>
+                        <div class="col align-self-center text-right text-muted">@_basket.Count items</div>
                     </div>
                 </div>
-
+                
+                @if (_basket.Count > 0)
+                {
                 @foreach (var item in _basket)
                 {
-                    <div class="row border-top border-bottom">
-                        <div class="row main align-items-center">
-                            <div class="col-2"><img class="img-fluid" src="images/Products/@item.Items"></div>
-                            <div class="col">
-                                <div class="row text-muted">Shirt</div>
-                                <div class="row">Cotton T-shirt</div>
-                            </div>
-                            <div class="col">
-                                <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a>
-                            </div>
-                            <div class="col">&euro; 44.00 <span class="close">&#10005;</span></div>
+                     <div class="row border-top border-bottom">
+                         <div class="row main align-items-center">
+                             <div class="col-2"><img class="img-fluid" src="images/Products/@item.Product.PictureUrl"></div>
+                             <div class="col">
+                                 <div class="row text-muted">@item.Product.Name</div>
+                                 <div class="row">@item.Product.Description</div>
+                             </div>
+                             <div class="col">
+                                 <a onclick="@(async () =>  await DeleteOneItemQuantity(item.ProductId, item.Quantity - 1))">-</a>
+                                 <a class="border">@item.Quantity</a>
+                                 <a onclick="@(async () =>  await AddItemQuantity(item.ProductId, item.Quantity + 1))">+</a>
+                             </div>
+                             <div class="col">@String.Format("{0:0.00}", item.Product.Price * item.Quantity) $<span class="close">&#10005;</span></div>
+                         </div>
+                     </div>
+                } 
+                }
+                else
+                {
+                    <div class="container">
+                        <h4 class="text-center">You have no items in your cart. Feel free to choose something delicious on our site</h4>
+                        <div class="d-flex justify-content-center">
+                            <img class="gif" src="gif/thinking-penguin.gif" />
                         </div>
                     </div>
+
                 }
+               
 
                 <div class="back-to-shop"><a href="#">&leftarrow;<span class="text-muted">Back to shop</span></a></div>
             </div>
@@ -42,34 +60,75 @@
                 <div><h5><b>Summary</b></h5></div>
                 <hr>
                 <div class="row">
-                    <div class="col" style="padding-left:0;">ITEMS 3</div>
-                    <div class="col text-right">&euro; 132.00</div>
+                    <div class="col" style="padding-left:0;">ITEMS @_basket.Count</div>
+                    <div class="col text-right"></div>
                 </div>
                 <form>
                     <p>SHIPPING</p>
-                    <select><option class="text-muted">Standard-Delivery- &euro;5.00</option></select>
-                    <p>GIVE CODE</p>
-                    <input id="code" placeholder="Enter your code">
+                    <select><option class="text-muted">Standard-Delivery- 5.00 $</option></select>  
                 </form>
                 <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
                     <div class="col">TOTAL PRICE</div>
-                    <div class="col text-right">&euro; 137.00</div>
+                    <div class="col text-right">@String.Format("{0:0.00}", _basket.Sum(x => x.Product.Price * x.Quantity) + 5)$</div>
                 </div>
-                <button class="btn">CHECKOUT</button>
+                <button class="btn @ConditionalClass()">CHECKOUT</button>
             </div>
         </div>
     </div>
 }
 
 
-@code{
-    IReadOnlyList<Basket> _basket;
 
+@code{
+    IReadOnlyList<BasketItem> _basket;
+    
     protected override async Task OnInitializedAsync()
     {
         var authenticationState = await _authenticationStateProvider.GetAuthenticationStateAsync();
         var user = authenticationState.User;
-        var spec = new GetBasketWithItemsSpecification(user.FindFirstValue(ClaimTypes.NameIdentifier));
-        _basket = await basketRepo.ListAsync(spec);
+        var basket = await basketRepo.GetBasketByUserId(user.FindFirstValue(ClaimTypes.NameIdentifier));
+        var spec = new GetBasketWithItemsSpecification(basket.Id);
+        _basket = await basketItemRepo.ListAsync(spec);
     }
+
+    async Task AddItemQuantity(int productId, int newQuantity)
+    {
+        await cartService.AddItemToCart(productId);
+        var updatedBasket = new List<BasketItem>(_basket);
+        var itemToUpdate = updatedBasket.Find(x => x.ProductId == productId);
+        if (itemToUpdate != null)
+        {
+            itemToUpdate.Quantity = newQuantity;
+            _basket = updatedBasket.AsReadOnly();
+            StateHasChanged(); // Notify Blazor that the state has changed
+        }
+    }
+
+    async Task DeleteOneItemQuantity(int productId, int newQuantity)
+    {
+        if (newQuantity <= 0)
+        {
+            await cartService.DeleteOneItemFromCart(productId);
+            _basket = _basket.Where(x => x.ProductId != productId).ToList().AsReadOnly();
+        }
+        else
+        {
+            await cartService.DeleteOneItemFromCart(productId);
+            var updatedBasket = new List<BasketItem>(_basket);
+            var itemToUpdate = updatedBasket.Find(x => x.ProductId == productId);
+            if (itemToUpdate != null)
+            {
+                itemToUpdate.Quantity = newQuantity;
+                _basket = updatedBasket.AsReadOnly();
+            }
+        }
+        StateHasChanged(); // Notify Blazor that the state has changed
+    }
+
+    string ConditionalClass()
+    {
+        if (_basket.Count == 0) return "disabled";
+        return "";
+    }
+
 }

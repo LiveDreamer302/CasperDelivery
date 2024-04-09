@@ -162,6 +162,7 @@ input {
 a {
     color: black;
     text-decoration: none;
+    cursor: pointer;    
 }
 
     a:hover {
@@ -174,4 +175,13 @@ a {
     background-repeat: no-repeat;
     background-position-x: 95%;
     background-position-y: center;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.gif{
+    width:200px;
+    height: 200px;
 }

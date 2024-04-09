@@ -57,6 +57,10 @@
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\gif\\thinking-penguin.gif",
+      "PackagePath": "staticwebassets\\gif\\thinking-penguin.gif"
+    },
+    {
       "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Carousel\\main-page-hero.png",
       "PackagePath": "staticwebassets\\images\\Carousel\\main-page-hero.png"
     },

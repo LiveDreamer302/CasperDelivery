@@ -3,6 +3,8 @@ using CasperDelivery.Data;
 using CasperDelivery.Data.Models;
 using CasperDelivery.EmailStuff;
 using CasperDelivery.Interfaces;
+using CasperDelivery.Interfaces.Repositories;
+using CasperDelivery.Repositories;
 using CasperDelivery.Services;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -29,6 +31,7 @@ builder.Services.AddDbContext<AppDbContext>(x =>
 
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped(typeof(ICartService), typeof(CartService));
+builder.Services.AddScoped(typeof(ICartRepository), typeof(CartRepository));
 builder.Services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<IdentityUser>>();
 builder.Services.AddTransient<NavBarService>();
 builder.Services.AddTransient<IEmailSender, EmailSender>();

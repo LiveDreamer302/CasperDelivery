@@ -248,6 +248,7 @@ input[b-prmiz07ffw] {
 a[b-prmiz07ffw] {
     color: black;
     text-decoration: none;
+    cursor: pointer;    
 }
 
     a:hover[b-prmiz07ffw] {
@@ -260,6 +261,15 @@ a[b-prmiz07ffw] {
     background-repeat: no-repeat;
     background-position-x: 95%;
     background-position-y: center;
+}
+
+h3[b-prmiz07ffw] {
+    font-family: 'Poppins', sans-serif;
+}
+
+.gif[b-prmiz07ffw]{
+    width:200px;
+    height: 200px;
 }
 /* _content/CasperDelivery/Pages/Index.razor.rz.scp.css */
 h1[b-7g4map14mv], .h1[b-7g4map14mv] {
