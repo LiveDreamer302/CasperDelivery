@@ -1,73 +1,121 @@
-h1[b-n8gg9pmag4]{
-font-family: "Copperplate Gothic Light";
-display: flex;
-justify-content: center;
+.single-product-item[b-n8gg9pmag4] {
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
 }
 
-.image-container[b-n8gg9pmag4] {
-    width: 300px; /* Set your desired container width */
-    text-align: center; /* Center align the content horizontally */
+    .single-product-item:hover[b-n8gg9pmag4] {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+.single-product-item[b-n8gg9pmag4] {
+    margin-bottom: 30px;
 }
 
-.image-container img[b-n8gg9pmag4] {
-    max-width: 100%; /* Make the image fit the container's width */
-    height: auto; /* Maintain the image's aspect ratio */
+    .single-product-item h3[b-n8gg9pmag4] {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+.single-product-item[b-n8gg9pmag4] {
+    -webkit-box-shadow: 0 0 20px #e4e4e4;
+    box-shadow: 0 0 20px #e4e4e4;
+    padding-bottom: 50px;
+    border-radius: 5px;
 }
 
-.text-container[b-n8gg9pmag4] {
-    background-color: #333; /* Background color for the text container */
-    color: white; /* Text color */
-    padding: 10px; /* Padding around the text */
-    text-align: center; /* Center align the text */
+button.cart-btn[b-n8gg9pmag4] {
+    border-radius: 50px;
+    margin-bottom: 15px;
 }
 
-.custom-bg[b-n8gg9pmag4]{
-background-color: #f6f6ed;}
-
-.color-container[b-n8gg9pmag4] {
-    text-align: center;
-    border-radius: 10px;
-    min-height: 150px;
-    position: relative;
+button.cart-btn[b-n8gg9pmag4] {
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
 }
 
-.color-container .container-text[b-n8gg9pmag4] {
-    position: absolute;
-    border-radius: 10px;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(255, 255, 255, 0.8);
-    opacity: 0;
-    transition: opacity 0.8s;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    button.cart-btn:hover[b-n8gg9pmag4] {
+        background-color: #051922;
+        color: #F28123;
+    }
+
+button.cart-btn[b-n8gg9pmag4] {
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    background-color: #F28123;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+}
+
+    button.cart-btn i[b-n8gg9pmag4] {
+        margin-right: 5px;
+    }
+
+.product-image img[b-n8gg9pmag4] {
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+    .product-image img:hover[b-n8gg9pmag4] {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+.product-image[b-n8gg9pmag4] {
+    padding: 30px;
+    padding-bottom: 0;
+}
+
+    .product-image img[b-n8gg9pmag4] {
+        width: 90%;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+td.product-image img[b-n8gg9pmag4] {
+    max-width: 50px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-bottom: 0;
+}
+
+.product-price[b-n8gg9pmag4] {
     font-size: large;
-    font-style: italic;
 }
 
-.color-container:hover .container-text[b-n8gg9pmag4] {
-    opacity: 1;
-}
-
-.color-container .container-text.fade-in[b-n8gg9pmag4] {
-    animation: fadeIn-b-n8gg9pmag4 2s;
-}
-
-@keyframes fadeIn-b-n8gg9pmag4 {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.background[b-n8gg9pmag4] {
+.blur-background[b-n8gg9pmag4] {
+    position: relative;
+    z-index: 1;
+    font-size: 4rem;
+    padding: 25px;
     width: 100%;
-    heigh: 100%;
-    background-image: url("/images/PageBackground/tile_background2.png");
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
+    .blur-background[b-n8gg9pmag4]:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        filter: blur(5px);
+        -webkit-filter: blur(5px);
+        z-index: -1;
+    }
+
+    a[b-n8gg9pmag4] {
+        color: white;
+        text-decoration: none;
+    }

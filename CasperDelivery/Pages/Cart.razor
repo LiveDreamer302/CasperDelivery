@@ -5,6 +5,7 @@
 @using CasperDelivery.Interfaces.Repositories
 @inject ICartRepository basketRepo
 @inject IGenericRepository<BasketItem> basketItemRepo
+@inject IAddressRepository addressRepo
 @inject ICartService cartService
 @inject AuthenticationStateProvider _authenticationStateProvider;
 
@@ -37,7 +38,8 @@
                                  <a class="border">@item.Quantity</a>
                                  <a onclick="@(async () =>  await AddItemQuantity(item.ProductId, item.Quantity + 1))">+</a>
                              </div>
-                             <div class="col">@String.Format("{0:0.00}", item.Product.Price * item.Quantity) $<span class="close">&#10005;</span></div>
+                             <div class="col">@String.Format("{0:0.00}", item.Product.Price * item.Quantity) $ </div>
+                                <div class="col"><a onclick="@(async () => await DeleteItemAsync(item.Id))"><span class="oi oi-x end-0"></span> </a></div>
                          </div>
                      </div>
                 } 
@@ -67,9 +69,30 @@
                     <p>SHIPPING</p>
                     <select><option class="text-muted">Standard-Delivery- 5.00 $</option></select>  
                 </form>
+                <div class="row mb-3">
+                    @if (userAddress.Street != null)
+                    {
+                        <h5>Current Address:</h5>
+                        <h6>@userAddress.FirstName @userAddress.LastName</h6>
+                        <h6>@userAddress.Street</h6>
+                        <h6>@userAddress.State</h6>
+                        <a href="/setaddress"> <button class="btn">Change Address</button></a>
+                    }
+                    else
+                    {
+                        <a href="/setaddress"> <button class="btn">+ Add Address</button></a>
+                    }
+                </div>
                 <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
                     <div class="col">TOTAL PRICE</div>
-                    <div class="col text-right">@String.Format("{0:0.00}", _basket.Sum(x => x.Product.Price * x.Quantity) + 5)$</div>
+                     @if (_basket.Count > 0)
+                    {
+                        <div class="col text-right">@String.Format("{0:0.00}", _basket.Sum(x => x.Product.Price * x.Quantity) + 5)$</div>
+                    }
+                     else
+                     {
+                         <div class="col text-right">0 $</div>
+                     }
                 </div>
                 <button class="btn @ConditionalClass()">CHECKOUT</button>
             </div>
@@ -77,16 +100,15 @@
     </div>
 }
 
-
-
 @code{
     IReadOnlyList<BasketItem> _basket;
-    
+    Address userAddress;
     protected override async Task OnInitializedAsync()
     {
         var authenticationState = await _authenticationStateProvider.GetAuthenticationStateAsync();
         var user = authenticationState.User;
         var basket = await basketRepo.GetBasketByUserId(user.FindFirstValue(ClaimTypes.NameIdentifier));
+        userAddress = await addressRepo.GetAddressByUserId(user.FindFirstValue(ClaimTypes.NameIdentifier));
         var spec = new GetBasketWithItemsSpecification(basket.Id);
         _basket = await basketItemRepo.ListAsync(spec);
     }
@@ -125,9 +147,17 @@
         StateHasChanged(); // Notify Blazor that the state has changed
     }
 
+    async Task DeleteItemAsync(int id)
+    {
+        await basketItemRepo.DeleteAsync(id);
+        _basket = _basket.Where(x => x.Id != id).ToList().AsReadOnly();
+        StateHasChanged();
+    }
+
+
     string ConditionalClass()
     {
-        if (_basket.Count == 0) return "disabled";
+        if (_basket.Count == 0 || userAddress.Street == null) return "disabled";
         return "";
     }
 

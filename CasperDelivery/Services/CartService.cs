@@ -11,19 +11,19 @@ namespace CasperDelivery.Services
     {
         private readonly AuthenticationStateProvider _authenticationStateProvider;
         private readonly IGenericRepository<Products> _productsRepo;
-        private readonly IGenericRepository<Restaurants> restRepo;
+        private readonly IGenericRepository<Restaurants> _restRepo;
         private readonly IGenericRepository<Basket> _basketRepo;
         private readonly IGenericRepository<BasketItem> _basketItemRepo;
 
         public CartService(AuthenticationStateProvider authenticationStateProvider,
                             IGenericRepository<Products> productsRepo,
-                            IGenericRepository<Restaurants> RestRepo,
+                            IGenericRepository<Restaurants> restRepo,
                             IGenericRepository<Basket> basketRepo,
                             IGenericRepository<BasketItem> basketItemRepo)
         {
             _authenticationStateProvider = authenticationStateProvider;
             _productsRepo = productsRepo;
-            restRepo = RestRepo;
+            _restRepo = restRepo;
             _basketRepo = basketRepo;
             _basketItemRepo = basketItemRepo;
         }
@@ -35,7 +35,7 @@ namespace CasperDelivery.Services
             {
                 var authenticationState = await _authenticationStateProvider.GetAuthenticationStateAsync();
                 var user = authenticationState.User;
-                if (!user.Identity.IsAuthenticated) return;
+                if (user.Identity != null && !user.Identity.IsAuthenticated) return;
 
                 var userId = user.FindFirstValue(ClaimTypes.NameIdentifier);
 
@@ -72,7 +72,7 @@ namespace CasperDelivery.Services
             {
                 var authenticationState = await _authenticationStateProvider.GetAuthenticationStateAsync();
                 var user = authenticationState.User;
-                if (!user.Identity.IsAuthenticated) return;
+                if (user.Identity != null && !user.Identity.IsAuthenticated) return;
 
                 var userId = user.FindFirstValue(ClaimTypes.NameIdentifier);
 
@@ -81,13 +81,13 @@ namespace CasperDelivery.Services
                              ?? throw new Exception($"We couldn't find user basket with user id {userId}");
 
                 var itemToDelete = basket.Items.FirstOrDefault(x => x.ProductId == id);
-                if (itemToDelete.Quantity > 1)
+                if (itemToDelete != null && itemToDelete.Quantity > 1)
                 {
                     itemToDelete.Quantity -= 1;
                 }
                 else
                 {
-                    _basketItemRepo.DeleteAsync(itemToDelete.Id);
+                    if (itemToDelete != null) await _basketItemRepo.DeleteAsync(itemToDelete.Id);
                 }
 
                 await _basketRepo.UpdateAsync();
@@ -100,10 +100,9 @@ namespace CasperDelivery.Services
 
         public async Task<Restaurants> GetRestaurantInfo(int id)
         {
-            Restaurants Restaurant;
             GetRestaurantWithProductSpecification spec = new GetRestaurantWithProductSpecification(id);
-            Restaurant = await restRepo.GetEntityWithSpecAsync(spec);
-            return Restaurant;
+            var restaurant = await _restRepo.GetEntityWithSpecAsync(spec);
+            return restaurant;
         }
     }
 }

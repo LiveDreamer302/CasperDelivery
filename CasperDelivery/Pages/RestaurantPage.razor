@@ -3,23 +3,34 @@
 @using CasperDelivery.Interfaces.Specifications;
 @inject IGenericRepository<Restaurants> RestRepo
 
-<div class="background">
-
-@if(Restaurant != null)
+@if (Restaurant != null)
 {
-    @foreach(var item in Restaurant)
-    {
-        var imageUrl = "images/RestaurantsBackground/" + @item.BackgroundUrl;
-        <RestaurantComponent RestId=item.Id ImageUrl=@imageUrl RestaurantName="@item.Name" Product="@item.Products"></RestaurantComponent>
-    }
-}
-else
-{
-    <p>Loading</p>
-}
 
-</div>
+    <div class="bg-image d-flex justify-content-center align-items-center"
+         style="
+         background-image: url('images/carousel/hero.jpg');
+         height: 40vh;
+          ">
+        <h1 class="text-white blur-background">Our Partners</h1>
+    </div>
 
+    <div class="container mt-5">
+        <div class="row product-lists">
+            @foreach (var item in Restaurant)
+            {
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="single-product-item">
+                        <div class="product-image">
+                            <img src="images/Restaurants/@item.PictureUrl" alt="" style="width: 200px; height: 200px; object-fit: fill;" />
+                        </div>
+                        <h3>@item.Name</h3>
+                        <a href="/restaurants/@item.Id"> <button class="cart-btn">Go To Store</button></a>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+}
 
 @code {
     IReadOnlyList<Restaurants> Restaurant;

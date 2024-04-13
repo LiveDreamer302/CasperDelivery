@@ -89,7 +89,13 @@ td.product-image img[b-cyjpsl0n28] {
     z-index: 1;
     font-size: 4rem;
     padding: 25px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
     .blur-background[b-cyjpsl0n28]:before {
         content: "";
@@ -98,10 +104,9 @@ td.product-image img[b-cyjpsl0n28] {
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 10, 0.5);
-        filter: blur(3px);
+        background-color: rgba(0, 0, 0, 0.5);
+        filter: blur(5px);
         -webkit-filter: blur(5px);
         z-index: -1;
-        border-radius: 20px;
-        border:solid;
+
     }

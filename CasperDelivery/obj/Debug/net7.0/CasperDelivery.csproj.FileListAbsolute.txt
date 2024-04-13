@@ -276,3 +276,6 @@ C:\netprojects\Important\CasperDelivery\CasperDelivery\obj\Debug\net7.0\CasperDe
 C:\netprojects\Important\CasperDelivery\CasperDelivery\obj\Debug\net7.0\scopedcss\Shared\LoginDisplay.razor.rz.scp.css
 C:\netprojects\Important\CasperDelivery\CasperDelivery\obj\Debug\net7.0\scopedcss\Pages\Cart.razor.rz.scp.css
 C:\netprojects\Important\CasperDelivery\CasperDelivery\obj\Debug\net7.0\CasperDe.E7F587C3.Up2Date
+C:\netprojects\Important\CasperDelivery\CasperDelivery\obj\Debug\net7.0\scopedcss\Components\WhyComponent.razor.rz.scp.css
+C:\netprojects\Important\CasperDelivery\CasperDelivery\obj\Debug\net7.0\scopedcss\Components\ReviewComponent.razor.rz.scp.css
+C:\netprojects\Important\CasperDelivery\CasperDelivery\obj\Debug\net7.0\scopedcss\Pages\SetAddress.razor.rz.scp.css

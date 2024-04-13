@@ -32,6 +32,7 @@ builder.Services.AddDbContext<AppDbContext>(x =>
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped(typeof(ICartService), typeof(CartService));
 builder.Services.AddScoped(typeof(ICartRepository), typeof(CartRepository));
+builder.Services.AddScoped(typeof(IAddressRepository), typeof(AddressRepository));
 builder.Services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<IdentityUser>>();
 builder.Services.AddTransient<NavBarService>();
 builder.Services.AddTransient<IEmailSender, EmailSender>();

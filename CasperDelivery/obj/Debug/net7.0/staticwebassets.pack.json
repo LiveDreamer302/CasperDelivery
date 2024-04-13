@@ -1,231 +1,239 @@
 {
   "Files": [
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\CasperDelivery.bundle.scp.css",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\CasperDelivery.bundle.scp.css",
       "PackagePath": "staticwebassets\\CasperDelivery.bundle.scp.css"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "PackagePath": "staticwebassets\\css\\open-iconic"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "PackagePath": "staticwebassets\\css\\open-iconic"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\css\\open-iconic\\README.md",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\css\\open-iconic\\README.md",
       "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\css\\site.css",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\favicon.png",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\gif\\thinking-penguin.gif",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\gif\\thinking-penguin.gif",
       "PackagePath": "staticwebassets\\gif\\thinking-penguin.gif"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Carousel\\main-page-hero.png",
-      "PackagePath": "staticwebassets\\images\\Carousel\\main-page-hero.png"
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Carousel\\hero.jpg",
+      "PackagePath": "staticwebassets\\images\\Carousel\\hero.jpg"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Carousel\\main-page-hero2.png",
-      "PackagePath": "staticwebassets\\images\\Carousel\\main-page-hero2.png"
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Customers\\dutch.png",
+      "PackagePath": "staticwebassets\\images\\Customers\\dutch.png"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Logo\\casper-delivery-logo.png",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Customers\\marston.png",
+      "PackagePath": "staticwebassets\\images\\Customers\\marston.png"
+    },
+    {
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Customers\\morgan.png",
+      "PackagePath": "staticwebassets\\images\\Customers\\morgan.png"
+    },
+    {
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Logo\\casper-delivery-logo.png",
       "PackagePath": "staticwebassets\\images\\Logo\\casper-delivery-logo.png"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Logo\\logo-black.png",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Logo\\logo-black.png",
       "PackagePath": "staticwebassets\\images\\Logo\\logo-black.png"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Logo\\logo-color.png",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Logo\\logo-color.png",
       "PackagePath": "staticwebassets\\images\\Logo\\logo-color.png"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Logo\\logo-no-background.png",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Logo\\logo-no-background.png",
       "PackagePath": "staticwebassets\\images\\Logo\\logo-no-background.png"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Logo\\logo-white-removebg-preview.png",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Logo\\logo-white-removebg-preview.png",
       "PackagePath": "staticwebassets\\images\\Logo\\logo-white-removebg-preview.png"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Logo\\logo-white.png",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Logo\\logo-white.png",
       "PackagePath": "staticwebassets\\images\\Logo\\logo-white.png"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\PageBackground\\tile_background2.png",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\PageBackground\\tile_background2.png",
       "PackagePath": "staticwebassets\\images\\PageBackground\\tile_background2.png"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\Fish_and_chips.jpg",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\Fish_and_chips.jpg",
       "PackagePath": "staticwebassets\\images\\Products\\Fish_and_chips.jpg"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\Tofu_Stir_Fry.jpg",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\Tofu_Stir_Fry.jpg",
       "PackagePath": "staticwebassets\\images\\Products\\Tofu_Stir_Fry.jpg"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\burger.jpg",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\burger.jpg",
       "PackagePath": "staticwebassets\\images\\Products\\burger.jpg"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\burrito.jpg",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\burrito.jpg",
       "PackagePath": "staticwebassets\\images\\Products\\burrito.jpg"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\coffee.jpg",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\coffee.jpg",
       "PackagePath": "staticwebassets\\images\\Products\\coffee.jpg"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\donut.jpg",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\donut.jpg",
       "PackagePath": "staticwebassets\\images\\Products\\donut.jpg"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\fries.jpg",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\fries.jpg",
       "PackagePath": "staticwebassets\\images\\Products\\fries.jpg"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\hot_dog.jpg",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\hot_dog.jpg",
       "PackagePath": "staticwebassets\\images\\Products\\hot_dog.jpg"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\ice_cream.jpg",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\ice_cream.jpg",
       "PackagePath": "staticwebassets\\images\\Products\\ice_cream.jpg"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\milkshake.jpg",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\milkshake.jpg",
       "PackagePath": "staticwebassets\\images\\Products\\milkshake.jpg"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\pancakes.jpg",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\pancakes.jpg",
       "PackagePath": "staticwebassets\\images\\Products\\pancakes.jpg"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\pasta.jpg",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\pasta.jpg",
       "PackagePath": "staticwebassets\\images\\Products\\pasta.jpg"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\pizza.jpg",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\pizza.jpg",
       "PackagePath": "staticwebassets\\images\\Products\\pizza.jpg"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\ramen.jpg",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\ramen.jpg",
       "PackagePath": "staticwebassets\\images\\Products\\ramen.jpg"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\salad.jpg",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\salad.jpg",
       "PackagePath": "staticwebassets\\images\\Products\\salad.jpg"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\sandwich.jpg",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\sandwich.jpg",
       "PackagePath": "staticwebassets\\images\\Products\\sandwich.jpg"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\smoothie.jpg",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\smoothie.jpg",
       "PackagePath": "staticwebassets\\images\\Products\\smoothie.jpg"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\soda.jpg",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\soda.jpg",
       "PackagePath": "staticwebassets\\images\\Products\\soda.jpg"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\steak.jpg",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\steak.jpg",
       "PackagePath": "staticwebassets\\images\\Products\\steak.jpg"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\sushi.jpg",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\sushi.jpg",
       "PackagePath": "staticwebassets\\images\\Products\\sushi.jpg"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\taco.jpg",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\taco.jpg",
       "PackagePath": "staticwebassets\\images\\Products\\taco.jpg"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\wings.jpg",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\wings.jpg",
       "PackagePath": "staticwebassets\\images\\Products\\wings.jpg"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\wings2.jpg",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\wings2.jpg",
       "PackagePath": "staticwebassets\\images\\Products\\wings2.jpg"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\RestaurantsBackground\\AndysBackground.png",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\RestaurantsBackground\\AndysBackground.png",
       "PackagePath": "staticwebassets\\images\\RestaurantsBackground\\AndysBackground.png"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\RestaurantsBackground\\McDonaldBackground.jpg",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\RestaurantsBackground\\McDonaldBackground.jpg",
       "PackagePath": "staticwebassets\\images\\RestaurantsBackground\\McDonaldBackground.jpg"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\RestaurantsBackground\\PizzaBackground.jpg",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\RestaurantsBackground\\PizzaBackground.jpg",
       "PackagePath": "staticwebassets\\images\\RestaurantsBackground\\PizzaBackground.jpg"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\RestaurantsBackground\\StarkebabBackground.jpg",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\RestaurantsBackground\\StarkebabBackground.jpg",
       "PackagePath": "staticwebassets\\images\\RestaurantsBackground\\StarkebabBackground.jpg"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\RestaurantsBackground\\SushiBackground.jpg",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\RestaurantsBackground\\SushiBackground.jpg",
       "PackagePath": "staticwebassets\\images\\RestaurantsBackground\\SushiBackground.jpg"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Restaurants\\Andys.png",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Restaurants\\Andys.png",
       "PackagePath": "staticwebassets\\images\\Restaurants\\Andys.png"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Restaurants\\McDonald.png",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Restaurants\\McDonald.png",
       "PackagePath": "staticwebassets\\images\\Restaurants\\McDonald.png"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Restaurants\\Pizza.jpg",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Restaurants\\Pizza.jpg",
       "PackagePath": "staticwebassets\\images\\Restaurants\\Pizza.jpg"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Restaurants\\Starkebab.png",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Restaurants\\Starkebab.png",
       "PackagePath": "staticwebassets\\images\\Restaurants\\Starkebab.png"
     },
     {
-      "Id": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Restaurants\\Sushi.jpg",
+      "Id": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Restaurants\\Sushi.jpg",
       "PackagePath": "staticwebassets\\images\\Restaurants\\Sushi.jpg"
     },
     {
