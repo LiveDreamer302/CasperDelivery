@@ -5,7 +5,6 @@
 
 @if(Restaurant != null)
 {
-
     <div class="bg-image d-flex justify-content-center align-items-center"
          style="
          background-image: url('images/Restaurantsbackground/@Restaurant.BackgroundUrl');
@@ -27,7 +26,7 @@
                         <p class="product-price">@String.Format("{0:0.00}", item.Price) $</p>
                         <AuthorizeView>
                             <Authorized>
-                                <button onclick="@(async () => await cartService.AddItemToCart(item.Id))" class="cart-btn livetoastbtn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button onclick="@(async () => await cartService.AddItemToCart(item.Id))" class="cart-btn" id=""><i class="fas fa-shopping-cart"></i> Add to Cart</button>
                             </Authorized>
                             <NotAuthorized>
                                 <p>You need to enter your account to add item to cart</p>
@@ -41,6 +40,21 @@
     </div>
 }
 
+<button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="..." class="rounded me-2" alt="...">
+      <strong class="me-auto">Bootstrap</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+    </div>
+  </div>
+</div>
 
 @code {
     [Parameter]

@@ -3,6 +3,7 @@ using CasperDelivery.Interfaces;
 using CasperDelivery.Interfaces.Specifications;
 using Microsoft.AspNetCore.Components.Authorization;
 using System.Security.Claims;
+using System.Net.Http.Json;
 
 
 namespace CasperDelivery.Services
@@ -14,18 +15,21 @@ namespace CasperDelivery.Services
         private readonly IGenericRepository<Restaurants> _restRepo;
         private readonly IGenericRepository<Basket> _basketRepo;
         private readonly IGenericRepository<BasketItem> _basketItemRepo;
+        private readonly HttpClient _http;
 
         public CartService(AuthenticationStateProvider authenticationStateProvider,
                             IGenericRepository<Products> productsRepo,
                             IGenericRepository<Restaurants> restRepo,
                             IGenericRepository<Basket> basketRepo,
-                            IGenericRepository<BasketItem> basketItemRepo)
+                            IGenericRepository<BasketItem> basketItemRepo,
+                            HttpClient http)
         {
             _authenticationStateProvider = authenticationStateProvider;
             _productsRepo = productsRepo;
             _restRepo = restRepo;
             _basketRepo = basketRepo;
             _basketItemRepo = basketItemRepo;
+            _http = http;
         }
 
 
@@ -104,5 +108,15 @@ namespace CasperDelivery.Services
             var restaurant = await _restRepo.GetEntityWithSpecAsync(spec);
             return restaurant;
         }
+
+        public async Task<string> Checkout(int basketId)
+        {
+            var spec = new GetBasketWithItemsSpecification(basketId);
+            var items = (await _basketItemRepo.ListAsync(spec)).ToList();
+            var response = await _http.PostAsJsonAsync("https://localhost:5001/payment/checkout", items);
+            var url = await response.Content.ReadAsStringAsync();
+            return url;
+        }
+
     }
 }

@@ -29,7 +29,6 @@ public class AppDbContext : IdentityDbContext<AppUser>
             .HasOne(user => user.Basket)
             .WithOne(basket => basket.User)
             .HasForeignKey<Basket>(basket => basket.UserId);
-        builder.Entity<Orders>().Property(o => o.TotalPrice).HasColumnType("money");
         builder.Entity<Products>().Property(p => p.Price).HasColumnType("money");
 
         builder.Entity<BasketItem>()

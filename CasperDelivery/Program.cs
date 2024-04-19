@@ -3,6 +3,7 @@ using CasperDelivery.Data;
 using CasperDelivery.Data.Models;
 using CasperDelivery.EmailStuff;
 using CasperDelivery.Interfaces;
+using CasperDelivery.Interfaces.Payment;
 using CasperDelivery.Interfaces.Repositories;
 using CasperDelivery.Repositories;
 using CasperDelivery.Services;
@@ -10,6 +11,7 @@ using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
+using Stripe;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
@@ -28,11 +30,14 @@ builder.Services.AddDbContext<AppDbContext>(x =>
     x.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 }, ServiceLifetime.Transient);
 
-
+//Stripe
+StripeConfiguration.ApiKey = configuration["StripeSettings:SecretKey"];
+//Services
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
-builder.Services.AddScoped(typeof(ICartService), typeof(CartService));
-builder.Services.AddScoped(typeof(ICartRepository), typeof(CartRepository));
-builder.Services.AddScoped(typeof(IAddressRepository), typeof(AddressRepository));
+builder.Services.AddScoped<IPaymentService, PaymentService>();
+builder.Services.AddScoped<ICartService, CartService>();
+builder.Services.AddScoped<ICartRepository, CartRepository>();
+builder.Services.AddScoped<IAddressRepository,AddressRepository>();
 builder.Services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<IdentityUser>>();
 builder.Services.AddTransient<NavBarService>();
 builder.Services.AddTransient<IEmailSender, EmailSender>();

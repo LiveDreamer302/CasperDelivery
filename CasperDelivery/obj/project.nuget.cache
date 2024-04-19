@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "sd1xZCOn0+ywSGfnW8SFQdstbR1BwGCsjfJaWc7KCJA9N31zZG5wAhv8BTdSK+fsC4cjaVc3oOoGh7jX1KqcmA==",
+  "dgSpecHash": "9+IM+sVM+54ZwEo37xBB74Aavxky3jS+lyirYN9FYg/CGpF7fRZqFozr5deMcuABZjEPRFs/6RYAfAX+bhTfnw==",
   "success": true,
   "projectFilePath": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\CasperDelivery.csproj",
   "expectedPackageFiles": [
@@ -155,6 +155,7 @@
     "C:\\Users\\stefa\\.nuget\\packages\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\stefa\\.nuget\\packages\\sendgrid\\9.29.1\\sendgrid.9.29.1.nupkg.sha512",
     "C:\\Users\\stefa\\.nuget\\packages\\starkbank-ecdsa\\1.3.3\\starkbank-ecdsa.1.3.3.nupkg.sha512",
+    "C:\\Users\\stefa\\.nuget\\packages\\stripe.net\\44.2.0\\stripe.net.44.2.0.nupkg.sha512",
     "C:\\Users\\stefa\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\stefa\\.nuget\\packages\\system.buffers\\4.3.0\\system.buffers.4.3.0.nupkg.sha512",
     "C:\\Users\\stefa\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",

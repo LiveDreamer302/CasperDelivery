@@ -32,7 +32,7 @@ namespace CasperDelivery.EmailStuff
             var client = new SendGridClient(apiKey);
             var msg = new SendGridMessage()
             {
-                From = new EmailAddress("manoilstefan302@gmail.com", "Email Confirmation"),
+                From = new EmailAddress("manoilstefan302@gmail.com", "Casper Delivery Email"),
                 Subject = subject,
                 PlainTextContent = message,
                 HtmlContent = message

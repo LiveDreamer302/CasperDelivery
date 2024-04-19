@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "djG4awlIhdGUio9yuB17xph35MYzi69/meKemyHz/rY=",
+  "Hash": "2qwE9zth8UtHTEb4rf1ItUbccv+srOJuMfDORJkxBUk=",
   "Source": "CasperDelivery",
   "BasePath": "_content/CasperDelivery",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "CasperDelivery\\wwwroot",
       "Source": "CasperDelivery",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\obj\\Debug\\net7.0\\scopedcss\\bundle\\CasperDelivery.styles.css",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\obj\\Debug\\net7.0\\scopedcss\\bundle\\CasperDelivery.styles.css",
       "SourceId": "CasperDelivery",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "CasperDelivery.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\obj\\Debug\\net7.0\\scopedcss\\bundle\\CasperDelivery.styles.css"
+      "OriginalItemSpec": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\obj\\Debug\\net7.0\\scopedcss\\bundle\\CasperDelivery.styles.css"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\CasperDelivery.bundle.scp.css",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\CasperDelivery.bundle.scp.css",
       "SourceId": "CasperDelivery",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "CasperDelivery.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\CasperDelivery.bundle.scp.css"
+      "OriginalItemSpec": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\CasperDelivery.bundle.scp.css"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\css\\site.css",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\css\\site.css",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\favicon.png",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\favicon.png",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "favicon.png",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.png"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\gif\\thinking-penguin.gif",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\gif\\thinking-penguin.gif",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "gif/thinking-penguin.gif",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\gif\\thinking-penguin.gif"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Carousel\\hero.jpg",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Carousel\\hero.jpg",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/Carousel/hero.jpg",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Carousel\\hero.jpg"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Customers\\dutch.png",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Customers\\dutch.png",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/Customers/dutch.png",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Customers\\dutch.png"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Customers\\marston.png",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Customers\\marston.png",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/Customers/marston.png",
       "AssetKind": "All",
@@ -378,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Customers\\marston.png"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Customers\\morgan.png",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Customers\\morgan.png",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/Customers/morgan.png",
       "AssetKind": "All",
@@ -397,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Customers\\morgan.png"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Logo\\casper-delivery-logo.png",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Logo\\casper-delivery-logo.png",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/Logo/casper-delivery-logo.png",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Logo\\casper-delivery-logo.png"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Logo\\logo-black.png",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Logo\\logo-black.png",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/Logo/logo-black.png",
       "AssetKind": "All",
@@ -435,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Logo\\logo-black.png"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Logo\\logo-color.png",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Logo\\logo-color.png",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/Logo/logo-color.png",
       "AssetKind": "All",
@@ -454,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Logo\\logo-color.png"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Logo\\logo-no-background.png",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Logo\\logo-no-background.png",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/Logo/logo-no-background.png",
       "AssetKind": "All",
@@ -473,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Logo\\logo-no-background.png"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Logo\\logo-white-removebg-preview.png",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Logo\\logo-white-removebg-preview.png",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/Logo/logo-white-removebg-preview.png",
       "AssetKind": "All",
@@ -492,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Logo\\logo-white-removebg-preview.png"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Logo\\logo-white.png",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Logo\\logo-white.png",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/Logo/logo-white.png",
       "AssetKind": "All",
@@ -511,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Logo\\logo-white.png"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\PageBackground\\tile_background2.png",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\PageBackground\\tile_background2.png",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/PageBackground/tile_background2.png",
       "AssetKind": "All",
@@ -530,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\images\\PageBackground\\tile_background2.png"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\burger.jpg",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\burger.jpg",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/Products/burger.jpg",
       "AssetKind": "All",
@@ -549,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Products\\burger.jpg"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\burrito.jpg",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\burrito.jpg",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/Products/burrito.jpg",
       "AssetKind": "All",
@@ -568,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Products\\burrito.jpg"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\coffee.jpg",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\coffee.jpg",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/Products/coffee.jpg",
       "AssetKind": "All",
@@ -587,10 +587,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Products\\coffee.jpg"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\donut.jpg",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\donut.jpg",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/Products/donut.jpg",
       "AssetKind": "All",
@@ -606,10 +606,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Products\\donut.jpg"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\Fish_and_chips.jpg",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\Fish_and_chips.jpg",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/Products/Fish_and_chips.jpg",
       "AssetKind": "All",
@@ -625,10 +625,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Products\\Fish_and_chips.jpg"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\fries.jpg",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\fries.jpg",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/Products/fries.jpg",
       "AssetKind": "All",
@@ -644,10 +644,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Products\\fries.jpg"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\hot_dog.jpg",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\hot_dog.jpg",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/Products/hot_dog.jpg",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Products\\hot_dog.jpg"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\ice_cream.jpg",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\ice_cream.jpg",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/Products/ice_cream.jpg",
       "AssetKind": "All",
@@ -682,10 +682,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Products\\ice_cream.jpg"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\milkshake.jpg",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\milkshake.jpg",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/Products/milkshake.jpg",
       "AssetKind": "All",
@@ -701,10 +701,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Products\\milkshake.jpg"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\pancakes.jpg",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\pancakes.jpg",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/Products/pancakes.jpg",
       "AssetKind": "All",
@@ -720,10 +720,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Products\\pancakes.jpg"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\pasta.jpg",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\pasta.jpg",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/Products/pasta.jpg",
       "AssetKind": "All",
@@ -739,10 +739,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Products\\pasta.jpg"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\pizza.jpg",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\pizza.jpg",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/Products/pizza.jpg",
       "AssetKind": "All",
@@ -758,10 +758,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Products\\pizza.jpg"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\ramen.jpg",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\ramen.jpg",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/Products/ramen.jpg",
       "AssetKind": "All",
@@ -777,10 +777,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Products\\ramen.jpg"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\salad.jpg",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\salad.jpg",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/Products/salad.jpg",
       "AssetKind": "All",
@@ -796,10 +796,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Products\\salad.jpg"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\sandwich.jpg",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\sandwich.jpg",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/Products/sandwich.jpg",
       "AssetKind": "All",
@@ -815,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Products\\sandwich.jpg"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\smoothie.jpg",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\smoothie.jpg",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/Products/smoothie.jpg",
       "AssetKind": "All",
@@ -834,10 +834,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Products\\smoothie.jpg"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\soda.jpg",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\soda.jpg",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/Products/soda.jpg",
       "AssetKind": "All",
@@ -853,10 +853,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Products\\soda.jpg"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\steak.jpg",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\steak.jpg",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/Products/steak.jpg",
       "AssetKind": "All",
@@ -872,10 +872,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Products\\steak.jpg"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\sushi.jpg",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\sushi.jpg",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/Products/sushi.jpg",
       "AssetKind": "All",
@@ -891,10 +891,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Products\\sushi.jpg"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\taco.jpg",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\taco.jpg",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/Products/taco.jpg",
       "AssetKind": "All",
@@ -910,10 +910,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Products\\taco.jpg"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\Tofu_Stir_Fry.jpg",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\Tofu_Stir_Fry.jpg",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/Products/Tofu_Stir_Fry.jpg",
       "AssetKind": "All",
@@ -929,10 +929,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Products\\Tofu_Stir_Fry.jpg"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\wings.jpg",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\wings.jpg",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/Products/wings.jpg",
       "AssetKind": "All",
@@ -948,10 +948,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Products\\wings.jpg"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Products\\wings2.jpg",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Products\\wings2.jpg",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/Products/wings2.jpg",
       "AssetKind": "All",
@@ -967,10 +967,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Products\\wings2.jpg"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Restaurants\\Andys.png",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Restaurants\\Andys.png",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/Restaurants/Andys.png",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Restaurants\\Andys.png"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Restaurants\\McDonald.png",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Restaurants\\McDonald.png",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/Restaurants/McDonald.png",
       "AssetKind": "All",
@@ -1005,10 +1005,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Restaurants\\McDonald.png"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Restaurants\\Pizza.jpg",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Restaurants\\Pizza.jpg",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/Restaurants/Pizza.jpg",
       "AssetKind": "All",
@@ -1024,10 +1024,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Restaurants\\Pizza.jpg"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Restaurants\\Starkebab.png",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Restaurants\\Starkebab.png",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/Restaurants/Starkebab.png",
       "AssetKind": "All",
@@ -1043,10 +1043,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Restaurants\\Starkebab.png"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\Restaurants\\Sushi.jpg",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\Restaurants\\Sushi.jpg",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/Restaurants/Sushi.jpg",
       "AssetKind": "All",
@@ -1062,10 +1062,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Restaurants\\Sushi.jpg"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\RestaurantsBackground\\AndysBackground.png",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\RestaurantsBackground\\AndysBackground.png",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/RestaurantsBackground/AndysBackground.png",
       "AssetKind": "All",
@@ -1081,10 +1081,10 @@
       "OriginalItemSpec": "wwwroot\\images\\RestaurantsBackground\\AndysBackground.png"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\RestaurantsBackground\\McDonaldBackground.jpg",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\RestaurantsBackground\\McDonaldBackground.jpg",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/RestaurantsBackground/McDonaldBackground.jpg",
       "AssetKind": "All",
@@ -1100,10 +1100,10 @@
       "OriginalItemSpec": "wwwroot\\images\\RestaurantsBackground\\McDonaldBackground.jpg"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\RestaurantsBackground\\PizzaBackground.jpg",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\RestaurantsBackground\\PizzaBackground.jpg",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/RestaurantsBackground/PizzaBackground.jpg",
       "AssetKind": "All",
@@ -1119,10 +1119,10 @@
       "OriginalItemSpec": "wwwroot\\images\\RestaurantsBackground\\PizzaBackground.jpg"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\RestaurantsBackground\\StarkebabBackground.jpg",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\RestaurantsBackground\\StarkebabBackground.jpg",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/RestaurantsBackground/StarkebabBackground.jpg",
       "AssetKind": "All",
@@ -1138,10 +1138,10 @@
       "OriginalItemSpec": "wwwroot\\images\\RestaurantsBackground\\StarkebabBackground.jpg"
     },
     {
-      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\images\\RestaurantsBackground\\SushiBackground.jpg",
+      "Identity": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\images\\RestaurantsBackground\\SushiBackground.jpg",
       "SourceId": "CasperDelivery",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\wwwroot\\",
+      "ContentRoot": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\wwwroot\\",
       "BasePath": "_content/CasperDelivery",
       "RelativePath": "images/RestaurantsBackground/SushiBackground.jpg",
       "AssetKind": "All",

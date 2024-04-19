@@ -7,7 +7,8 @@
 @inject IGenericRepository<BasketItem> basketItemRepo
 @inject IAddressRepository addressRepo
 @inject ICartService cartService
-@inject AuthenticationStateProvider _authenticationStateProvider;
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject NavigationManager NavManager
 
 
 @if (_basket != null)
@@ -85,16 +86,16 @@
                 </div>
                 <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
                     <div class="col">TOTAL PRICE</div>
-                     @if (_basket.Count > 0)
+                    @if (_basket.Count > 0)
                     {
                         <div class="col text-right">@String.Format("{0:0.00}", _basket.Sum(x => x.Product.Price * x.Quantity) + 5)$</div>
                     }
-                     else
-                     {
-                         <div class="col text-right">0 $</div>
-                     }
+                    else
+                    {
+                        <div class="col text-right">0 $</div>
+                    }
                 </div>
-                <button class="btn @ConditionalClass()">CHECKOUT</button>
+                    <button class="btn @ConditionalClass()" @onclick="PlaceOrder">Checkout</button>
             </div>
         </div>
     </div>
@@ -102,12 +103,14 @@
 
 @code{
     IReadOnlyList<BasketItem> _basket;
+    int _basketId;
     Address userAddress;
     protected override async Task OnInitializedAsync()
     {
-        var authenticationState = await _authenticationStateProvider.GetAuthenticationStateAsync();
+        var authenticationState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
         var user = authenticationState.User;
         var basket = await basketRepo.GetBasketByUserId(user.FindFirstValue(ClaimTypes.NameIdentifier));
+        _basketId = basket.Id;
         userAddress = await addressRepo.GetAddressByUserId(user.FindFirstValue(ClaimTypes.NameIdentifier));
         var spec = new GetBasketWithItemsSpecification(basket.Id);
         _basket = await basketItemRepo.ListAsync(spec);
@@ -159,6 +162,12 @@
     {
         if (_basket.Count == 0 || userAddress.Street == null) return "disabled";
         return "";
+    }
+
+    private async Task PlaceOrder()
+    {
+        string checkoutUrl = await cartService.Checkout(_basketId);
+        NavManager.NavigateTo(checkoutUrl);
     }
 
 }

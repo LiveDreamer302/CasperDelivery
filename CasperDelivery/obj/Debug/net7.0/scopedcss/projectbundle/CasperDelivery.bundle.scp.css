@@ -757,6 +757,8 @@ a[b-7g4map14mv] {
 }
 
 
+
+
 /* _content/CasperDelivery/Pages/RestaurantDetails.razor.rz.scp.css */
 .single-product-item[b-cyjpsl0n28] {
     -webkit-transition: 0.3s;
@@ -1019,6 +1021,15 @@ td.product-image img[b-n8gg9pmag4] {
     font-weight: 700;
     color: black;
     margin-top: 50px;
+}
+/* _content/CasperDelivery/Pages/SuccessPage.razor.rz.scp.css */
+.card[b-a6alai3lgt] {
+    background: white;
+    padding: 60px;
+    border-radius: 4px;
+    box-shadow: 0 2px 3px #C8D0D8;
+    display: inline-block;
+    margin: 0 auto;
 }
 /* _content/CasperDelivery/Shared/LoginDisplay.razor.rz.scp.css */
 .cart-link[b-uy7xf0yhq1] {

@@ -7,5 +7,6 @@ namespace CasperDelivery.Interfaces
         Task AddItemToCart(int id);
         Task DeleteOneItemFromCart(int id);
         Task<Restaurants> GetRestaurantInfo(int id);
+        Task<string> Checkout(int basketId);
     }
 }
