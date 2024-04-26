@@ -5,7 +5,6 @@ namespace CasperDelivery.Data.Models
 {
     public class BasketItem : BaseEntity
     {
-        public int BasketId { get; set; }
         [JsonIgnore]
         public Basket Basket { get; set; }
         public int ProductId { get; set; }

@@ -1,5 +1,14 @@
 ﻿@page "/payment/success"
+@using CasperDelivery.Interfaces
+@using CasperDelivery.Interfaces.Repositories
+@using System.Security.Claims
+@using CasperDelivery.Interfaces.Specifications
 
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject IGenericRepository<Orders> OrderRepo
+@inject IGenericRepository<BasketItem> basketItemRepo
+@inject IGenericRepository<OrderItem> orderItemRepo
+@inject ICartRepository CartRepo
 <div class="container-fluid text-center">
     <div class="card mt-5">
         <h2 class="text-success"><span class="oi oi-circle-check"></span> Thanks for your order!</h2>
@@ -7,3 +16,44 @@
         <a href="/"><button class="btn btn-dark mt-5"> Go to Home Page</button></a>
     </div>
 </div>
+
+@* @code{ *@
+@*     Orders _order; *@
+@*     IReadOnlyList<BasketItem> _basket; *@
+@*     string _userId; *@
+@* *@
+@*     protected override async Task OnInitializedAsync() *@
+@*     { *@
+@*         await ProcessOrder(); *@
+@*     } *@
+@*      *@
+@*     private async Task ProcessOrder() *@
+@*     { *@
+@*         var authenticationState = await AuthenticationStateProvider.GetAuthenticationStateAsync(); *@
+@*         var user = authenticationState.User; *@
+@*         _userId = user.FindFirstValue(ClaimTypes.NameIdentifier); *@
+@*         var basket = await CartRepo.GetBasketByUserId(_userId); *@
+@*         var spec = new GetBasketWithItemsSpecification(basket.Id); *@
+@*         _basket = await basketItemRepo.ListAsync(spec); *@
+@*         _order = new Orders *@
+@*         { *@
+@*             Date = DateTime.Now, *@
+@*             Items = new List<OrderItem>(), *@
+@*             TotalPrice = 0, *@
+@*             UserId = _userId *@
+@*         }; *@
+@*         foreach (var item in _basket) *@
+@*         { *@
+@*             _order.Items.Add(new OrderItem *@
+@*             { *@
+@*                 Product = item.Product, *@
+@*                 Quantity = item.Quantity *@
+@*             }); *@
+@*         } *@
+@* *@
+@*         _order.TotalPrice = _basket.Sum(x => x.Product.Price * x.Quantity) + 5; *@
+@*         await OrderRepo.UpdateAsync(); *@
+@*         await orderItemRepo.UpdateAsync(); *@
+@*     } *@
+@* *@
+@* } *@

@@ -11,5 +11,4 @@ public class Products : BaseEntity
     public int RestaurantId { get; set; }
     [JsonIgnore]
     public Restaurants Restaurant { get; set; }
-    public List<Orders> Orders { get; set; }
 }

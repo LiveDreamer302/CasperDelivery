@@ -5,5 +5,5 @@ namespace CasperDelivery.Interfaces.Payment;
 
 public interface IPaymentService
 {
-    Session CreateCheckoutSession(List<BasketItem> basketItems);
+    Session CreateCheckoutSession(List<BasketItem> basketItems, string userId);
 }

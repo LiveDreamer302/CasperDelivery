@@ -148,12 +148,6 @@ namespace CasperDelivery.Data.Migrations
             modelBuilder.Entity("CasperDelivery.Data.Models.BasketItem", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("BasketId")
                         .HasColumnType("int");
 
                     b.Property<int>("ProductId")
@@ -163,8 +157,6 @@ namespace CasperDelivery.Data.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("BasketId");
 
                     b.HasIndex("ProductId");
 
@@ -174,12 +166,6 @@ namespace CasperDelivery.Data.Migrations
             modelBuilder.Entity("CasperDelivery.Data.Models.OrderItem", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("OrderId")
                         .HasColumnType("int");
 
                     b.Property<int>("ProductId")
@@ -189,8 +175,6 @@ namespace CasperDelivery.Data.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("OrderId");
 
                     b.HasIndex("ProductId");
 
@@ -208,15 +192,13 @@ namespace CasperDelivery.Data.Migrations
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("ProductsId")
-                        .HasColumnType("int");
+                    b.Property<decimal>("TotalPrice")
+                        .HasColumnType("money");
 
                     b.Property<string>("UserId")
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ProductsId");
 
                     b.HasIndex("UserId");
 
@@ -434,7 +416,7 @@ namespace CasperDelivery.Data.Migrations
                 {
                     b.HasOne("CasperDelivery.Data.Models.Basket", "Basket")
                         .WithMany("Items")
-                        .HasForeignKey("BasketId")
+                        .HasForeignKey("Id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -453,7 +435,7 @@ namespace CasperDelivery.Data.Migrations
                 {
                     b.HasOne("CasperDelivery.Data.Models.Orders", "Order")
                         .WithMany("Items")
-                        .HasForeignKey("OrderId")
+                        .HasForeignKey("Id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -470,10 +452,6 @@ namespace CasperDelivery.Data.Migrations
 
             modelBuilder.Entity("CasperDelivery.Data.Models.Orders", b =>
                 {
-                    b.HasOne("CasperDelivery.Data.Models.Products", null)
-                        .WithMany("Orders")
-                        .HasForeignKey("ProductsId");
-
                     b.HasOne("CasperDelivery.Data.Models.AppUser", "User")
                         .WithMany("Orders")
                         .HasForeignKey("UserId");
@@ -560,11 +538,6 @@ namespace CasperDelivery.Data.Migrations
             modelBuilder.Entity("CasperDelivery.Data.Models.Orders", b =>
                 {
                     b.Navigation("Items");
-                });
-
-            modelBuilder.Entity("CasperDelivery.Data.Models.Products", b =>
-                {
-                    b.Navigation("Orders");
                 });
 
             modelBuilder.Entity("CasperDelivery.Data.Models.Restaurants", b =>

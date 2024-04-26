@@ -36,7 +36,7 @@ public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
 
     public async Task CreateAsync(T item)
     {
-        _context.Set<T>().Add(item);
+         await _context.Set<T>().AddAsync(item);
         await _context.SaveChangesAsync();
     }
 

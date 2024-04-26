@@ -52,7 +52,7 @@ namespace CasperDelivery.Services
                 {
                     basket.Items.Add(new BasketItem
                     {
-                        BasketId = basket.Id,
+                        Id = basket.Id,
                         Product = await _productsRepo.GetOneAsync(id),
                         Quantity = 1
                     });
@@ -109,11 +109,18 @@ namespace CasperDelivery.Services
             return restaurant;
         }
 
-        public async Task<string> Checkout(int basketId)
+        public async Task<string> Checkout(int basketId, string userId)
         {
             var spec = new GetBasketWithItemsSpecification(basketId);
             var items = (await _basketItemRepo.ListAsync(spec)).ToList();
-            var response = await _http.PostAsJsonAsync("https://localhost:5001/payment/checkout", items);
+            var data = new CheckoutPostData
+            {
+                UserId = userId,
+                Items = items
+            };
+
+            var response = await _http.PostAsJsonAsync("https://localhost:5001/payment/checkout", data);
+
             var url = await response.Content.ReadAsStringAsync();
             return url;
         }

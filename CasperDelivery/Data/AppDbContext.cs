@@ -34,7 +34,7 @@ public class AppDbContext : IdentityDbContext<AppUser>
         builder.Entity<BasketItem>()
             .HasOne(item => item.Basket)
             .WithMany(basket => basket.Items)
-            .HasForeignKey(item => item.BasketId);
+            .HasForeignKey(item => item.Id);
 
         builder.Entity<Basket>()
             .HasOne(basket => basket.User)
@@ -44,12 +44,16 @@ public class AppDbContext : IdentityDbContext<AppUser>
         builder.Entity<OrderItem>()
             .HasOne(item => item.Order)
             .WithMany(order => order.Items)
-            .HasForeignKey(item => item.OrderId);
+            .HasForeignKey(item => item.Id);
 
         builder.Entity<Orders>()
             .HasOne(order => order.User)
             .WithMany(user => user.Orders)
             .HasForeignKey(order => order.UserId);
+        
+        builder.Entity<Orders>().Property(p => p.TotalPrice).HasColumnType("money");
+    
+        
 
 
         base.OnModelCreating(builder);

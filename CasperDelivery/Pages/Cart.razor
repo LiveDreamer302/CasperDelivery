@@ -104,14 +104,16 @@
 @code{
     IReadOnlyList<BasketItem> _basket;
     int _basketId;
+    string userId = "";
     Address userAddress;
     protected override async Task OnInitializedAsync()
     {
         var authenticationState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
         var user = authenticationState.User;
-        var basket = await basketRepo.GetBasketByUserId(user.FindFirstValue(ClaimTypes.NameIdentifier));
+        userId = user.FindFirstValue(ClaimTypes.NameIdentifier);
+        var basket = await basketRepo.GetBasketByUserId(userId);
         _basketId = basket.Id;
-        userAddress = await addressRepo.GetAddressByUserId(user.FindFirstValue(ClaimTypes.NameIdentifier));
+        userAddress = await addressRepo.GetAddressByUserId(userId);
         var spec = new GetBasketWithItemsSpecification(basket.Id);
         _basket = await basketItemRepo.ListAsync(spec);
     }
@@ -166,7 +168,7 @@
 
     private async Task PlaceOrder()
     {
-        string checkoutUrl = await cartService.Checkout(_basketId);
+        string checkoutUrl = await cartService.Checkout(_basketId, userId);
         NavManager.NavigateTo(checkoutUrl);
     }
 

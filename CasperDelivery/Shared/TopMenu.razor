@@ -9,6 +9,7 @@
 @inject AuthenticationStateProvider AuthenticationStateProvider
 @inject NavBarService service
 @inject SignInManager<AppUser> SignInManager
+@inject IGenericRepository<Basket> cartService
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
   <div class="container-fluid me-5 ms-5">
@@ -62,9 +63,8 @@
         {
             UserId = user.FindFirstValue(ClaimTypes.NameIdentifier);
         }
-
-        Restaurant = await service.GetAllAsync();
-        Basket = await service.GetBasketAsync(UserId);
+            Restaurant = await service.GetAllAsync();
+            Basket = await service.GetBasketAsync(UserId);
 
         if (user.Identity.IsAuthenticated && Basket.Items != null)
         {

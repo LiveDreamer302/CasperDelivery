@@ -14,7 +14,7 @@ public class PaymentService : IPaymentService
     {
         StripeConfiguration.ApiKey = configuration["StripeSettings:SecretKey"];
     }
-    public Session CreateCheckoutSession(List<BasketItem> cartItems)
+    public Session CreateCheckoutSession(List<BasketItem> cartItems, string userId)
     {
         var lineItems = new List<SessionLineItemOptions>();
         cartItems.ForEach(ci => lineItems.Add(new SessionLineItemOptions
@@ -53,6 +53,10 @@ public class PaymentService : IPaymentService
             Mode = "payment",
             SuccessUrl = "https://localhost:5001/payment/success",
             CancelUrl = "https://localhost:5001",
+            Metadata = new Dictionary<string, string>
+            {
+                { "UserId", userId }
+            }
         };
 
         var service = new SessionService();
