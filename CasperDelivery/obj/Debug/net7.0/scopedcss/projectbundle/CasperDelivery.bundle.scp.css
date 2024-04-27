@@ -759,6 +759,14 @@ a[b-7g4map14mv] {
 
 
 
+/* _content/CasperDelivery/Pages/OrderPage.razor.rz.scp.css */
+.my-header[b-68606u459j]{
+font-family: "Poppins", sans-serif;
+}
+.accordion-header[b-68606u459j] {
+    background-color: white !important;
+}
+
 /* _content/CasperDelivery/Pages/RestaurantDetails.razor.rz.scp.css */
 .single-product-item[b-cyjpsl0n28] {
     -webkit-transition: 0.3s;
@@ -1037,18 +1045,11 @@ td.product-image img[b-n8gg9pmag4] {
     font-size: 25px;
     margin-right: 4px;
 }
-    
-.cart-count[b-uy7xf0yhq1] {
-    position: absolute;
-    top: -5px;
-    right: -5px; 
-    background-color: darkred;
+.order-link[b-uy7xf0yhq1]{
     color: white;
-    border-radius: 50%;
-    padding: 2px 6px;
-    font-size: 12px;
+    font-size: 17px;
+    margin-right: 4px;
 }
-
 .login[b-uy7xf0yhq1] {
     padding: 10px 13px;
     text-decoration: none;

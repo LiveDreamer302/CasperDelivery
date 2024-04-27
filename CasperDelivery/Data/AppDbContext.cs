@@ -34,7 +34,7 @@ public class AppDbContext : IdentityDbContext<AppUser>
         builder.Entity<BasketItem>()
             .HasOne(item => item.Basket)
             .WithMany(basket => basket.Items)
-            .HasForeignKey(item => item.Id);
+            .HasForeignKey(item => item.BasketId);
 
         builder.Entity<Basket>()
             .HasOne(basket => basket.User)
@@ -44,7 +44,7 @@ public class AppDbContext : IdentityDbContext<AppUser>
         builder.Entity<OrderItem>()
             .HasOne(item => item.Order)
             .WithMany(order => order.Items)
-            .HasForeignKey(item => item.Id);
+            .HasForeignKey(item => item.OrderId);
 
         builder.Entity<Orders>()
             .HasOne(order => order.User)

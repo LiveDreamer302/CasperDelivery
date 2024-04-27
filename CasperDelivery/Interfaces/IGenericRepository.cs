@@ -11,5 +11,6 @@ public interface IGenericRepository<T> where T : BaseEntity
     Task<IReadOnlyList<T>> ListAsync(ISpecification<T> spec);
     Task DeleteAsync(int id);
     Task CreateAsync(T item);
-    Task UpdateAsync();
+    Task UpdateAsync(T item);
+    Task UpdateAsync(List<T> items);
 }

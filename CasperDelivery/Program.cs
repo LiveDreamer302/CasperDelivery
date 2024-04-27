@@ -36,6 +36,7 @@ StripeConfiguration.ApiKey = configuration["StripeSettings:SecretKey"];
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped<IPaymentService, PaymentService>();
 builder.Services.AddScoped<ICartService, CartService>();
+builder.Services.AddScoped<IOrdersRepository, OrdersRepository>();
 builder.Services.AddScoped<ICartRepository, CartRepository>();
 builder.Services.AddScoped<IAddressRepository,AddressRepository>();
 builder.Services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<IdentityUser>>();

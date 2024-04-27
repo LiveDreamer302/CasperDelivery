@@ -49,11 +49,10 @@ public class PaymentController : ControllerBase
                 Request.Headers["Stripe-Signature"], WhSecret, throwOnApiVersionMismatch: false);
             Orders order = new Orders();
             IReadOnlyList<BasketItem> _basket;
-
-            if (stripeEvent.Type == Events.PaymentIntentSucceeded)
+            if (stripeEvent.Type == Events.CheckoutSessionCompleted)
             {
-                var paymentIntent = (PaymentIntent)stripeEvent.Data.Object;
-                var userId = "0de7d1c3-fa15-463b-a7bd-c6e2dd7e64c9";
+                var paymentIntent = (Session)stripeEvent.Data.Object;
+                var userId = paymentIntent.Metadata["UserId"];
                 var basket = await _basketRepo.GetBasketByUserId(userId);
                 var spec = new GetBasketWithItemsSpecification(basket.Id);
                 _basket = await _basketItemRepo.ListAsync(spec);
@@ -76,9 +75,7 @@ public class PaymentController : ControllerBase
                     await _basketItemRepo.DeleteAsync(bi.Id);
                 }
                 
-                await _basketItemRepo.UpdateAsync();
                 await _orderRepo.CreateAsync(order);
-                await _orderRepo.UpdateAsync();
             }
             else
             {

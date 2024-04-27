@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace CasperDelivery.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class FirstMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -260,7 +260,9 @@ namespace CasperDelivery.Data.Migrations
                 name: "BasketItem",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false),
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    BasketId = table.Column<int>(type: "int", nullable: false),
                     ProductId = table.Column<int>(type: "int", nullable: false),
                     Quantity = table.Column<int>(type: "int", nullable: false)
                 },
@@ -268,8 +270,8 @@ namespace CasperDelivery.Data.Migrations
                 {
                     table.PrimaryKey("PK_BasketItem", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_BasketItem_Basket_Id",
-                        column: x => x.Id,
+                        name: "FK_BasketItem_Basket_BasketId",
+                        column: x => x.BasketId,
                         principalTable: "Basket",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -285,7 +287,9 @@ namespace CasperDelivery.Data.Migrations
                 name: "OrdersItems",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false),
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    OrderId = table.Column<int>(type: "int", nullable: false),
                     ProductId = table.Column<int>(type: "int", nullable: false),
                     Quantity = table.Column<int>(type: "int", nullable: false)
                 },
@@ -293,8 +297,8 @@ namespace CasperDelivery.Data.Migrations
                 {
                     table.PrimaryKey("PK_OrdersItems", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_OrdersItems_Orders_Id",
-                        column: x => x.Id,
+                        name: "FK_OrdersItems_Orders_OrderId",
+                        column: x => x.OrderId,
                         principalTable: "Orders",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -360,6 +364,11 @@ namespace CasperDelivery.Data.Migrations
                 filter: "[UserId] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
+                name: "IX_BasketItem_BasketId",
+                table: "BasketItem",
+                column: "BasketId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_BasketItem_ProductId",
                 table: "BasketItem",
                 column: "ProductId");
@@ -368,6 +377,11 @@ namespace CasperDelivery.Data.Migrations
                 name: "IX_Orders_UserId",
                 table: "Orders",
                 column: "UserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_OrdersItems_OrderId",
+                table: "OrdersItems",
+                column: "OrderId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_OrdersItems_ProductId",

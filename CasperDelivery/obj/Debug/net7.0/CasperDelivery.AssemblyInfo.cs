@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CasperDelivery")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+14d06b759168d4aeb469d7979c88d3e41e4b30c1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7f0e4f01ce790a6b90d4fa0df3646d130f49e648")]
 [assembly: System.Reflection.AssemblyProductAttribute("CasperDelivery")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CasperDelivery")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

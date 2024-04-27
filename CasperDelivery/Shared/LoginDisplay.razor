@@ -2,16 +2,16 @@
     <Authorized>
         <div class="d-flex align-items-center">
             <div class="me-4 d-inline-block position-relative">
+                    <a class="order-link" href="/order"><i class="oi oi-clipboard"> My Orders</i></a>
+             </div>
+            <div class="me-4 d-inline-block position-relative">
                 <a class="cart-link" href="/cart"><i class="oi oi-cart"></i></a>
-                @if(BasketCount > 0){
-                    <span class="cart-count">@BasketCount</span>
-                }
             </div>
-            
-            <a href="Identity/Account/Manage"  class="login">
+
+            <a href="Identity/Account/Manage" class="login">
                 <span class="oi oi-person"></span>
             </a>
-            <div style="width: 10px;"></div> 
+            <div style="width: 10px;"></div>
             <form method="post" action="Identity/Account/Logout" class="ml-3">
                 <button type="submit" class="btn login"><i class="oi oi-account-logout"></i></button>
             </form>
@@ -24,6 +24,5 @@
     </NotAuthorized>
 </AuthorizeView>
  @code{
-     [Parameter]
-     public int BasketCount { get; set; }
+
  }

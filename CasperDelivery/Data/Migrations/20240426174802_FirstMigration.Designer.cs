@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CasperDelivery.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240426164516_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20240426174802_FirstMigration")]
+    partial class FirstMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -151,6 +151,12 @@ namespace CasperDelivery.Data.Migrations
             modelBuilder.Entity("CasperDelivery.Data.Models.BasketItem", b =>
                 {
                     b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("BasketId")
                         .HasColumnType("int");
 
                     b.Property<int>("ProductId")
@@ -160,6 +166,8 @@ namespace CasperDelivery.Data.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("BasketId");
 
                     b.HasIndex("ProductId");
 
@@ -169,6 +177,12 @@ namespace CasperDelivery.Data.Migrations
             modelBuilder.Entity("CasperDelivery.Data.Models.OrderItem", b =>
                 {
                     b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("OrderId")
                         .HasColumnType("int");
 
                     b.Property<int>("ProductId")
@@ -178,6 +192,8 @@ namespace CasperDelivery.Data.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("OrderId");
 
                     b.HasIndex("ProductId");
 
@@ -419,7 +435,7 @@ namespace CasperDelivery.Data.Migrations
                 {
                     b.HasOne("CasperDelivery.Data.Models.Basket", "Basket")
                         .WithMany("Items")
-                        .HasForeignKey("Id")
+                        .HasForeignKey("BasketId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -438,7 +454,7 @@ namespace CasperDelivery.Data.Migrations
                 {
                     b.HasOne("CasperDelivery.Data.Models.Orders", "Order")
                         .WithMany("Items")
-                        .HasForeignKey("Id")
+                        .HasForeignKey("OrderId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

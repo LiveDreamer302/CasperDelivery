@@ -52,7 +52,7 @@ namespace CasperDelivery.Services
                 {
                     basket.Items.Add(new BasketItem
                     {
-                        Id = basket.Id,
+                        BasketId = basket.Id,
                         Product = await _productsRepo.GetOneAsync(id),
                         Quantity = 1
                     });
@@ -61,8 +61,8 @@ namespace CasperDelivery.Services
                 {
                     existingItem.Quantity += 1;
                 }
-
-                await _basketRepo.UpdateAsync();
+                await _basketRepo.UpdateAsync(basket);
+                await _basketItemRepo.UpdateAsync(basket.Items);
             }
             catch (Exception ex)
             {
@@ -88,13 +88,14 @@ namespace CasperDelivery.Services
                 if (itemToDelete != null && itemToDelete.Quantity > 1)
                 {
                     itemToDelete.Quantity -= 1;
+                    await _basketRepo.UpdateAsync(basket);
                 }
                 else
                 {
                     if (itemToDelete != null) await _basketItemRepo.DeleteAsync(itemToDelete.Id);
                 }
 
-                await _basketRepo.UpdateAsync();
+                
             }
             catch (Exception ex)
             {
