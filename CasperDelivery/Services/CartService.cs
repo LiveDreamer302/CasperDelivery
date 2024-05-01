@@ -4,6 +4,8 @@ using CasperDelivery.Interfaces.Specifications;
 using Microsoft.AspNetCore.Components.Authorization;
 using System.Security.Claims;
 using System.Net.Http.Json;
+using Blazored.Toast.Services;
+using CasperDelivery.Interfaces.Repositories;
 
 
 namespace CasperDelivery.Services
@@ -14,22 +16,28 @@ namespace CasperDelivery.Services
         private readonly IGenericRepository<Products> _productsRepo;
         private readonly IGenericRepository<Restaurants> _restRepo;
         private readonly IGenericRepository<Basket> _basketRepo;
+        private readonly ICartRepository _cartRepository;
         private readonly IGenericRepository<BasketItem> _basketItemRepo;
         private readonly HttpClient _http;
+        private readonly IToastService _toastService;
 
         public CartService(AuthenticationStateProvider authenticationStateProvider,
                             IGenericRepository<Products> productsRepo,
                             IGenericRepository<Restaurants> restRepo,
                             IGenericRepository<Basket> basketRepo,
+                            ICartRepository cartRepository,
                             IGenericRepository<BasketItem> basketItemRepo,
-                            HttpClient http)
+                            HttpClient http,
+                            IToastService toastService)
         {
             _authenticationStateProvider = authenticationStateProvider;
             _productsRepo = productsRepo;
             _restRepo = restRepo;
             _basketRepo = basketRepo;
+            _cartRepository = cartRepository;
             _basketItemRepo = basketItemRepo;
             _http = http;
+            _toastService = toastService;
         }
 
 
@@ -42,18 +50,18 @@ namespace CasperDelivery.Services
                 if (user.Identity != null && !user.Identity.IsAuthenticated) return;
 
                 var userId = user.FindFirstValue(ClaimTypes.NameIdentifier);
+                var basket = await _cartRepository.GetBasketByUserId(userId);
+                var spec = new GetBasketWithItemsSpecification(1);
+                var _basketItems = await _basketItemRepo.ListAsync(spec);
+                var biIems = _basketItems.ToList();
 
-                var basketSpec = new GetBasketSpecification(userId);
-                var basket = await _basketRepo.GetEntityWithSpecAsync(basketSpec)
-                    ?? throw new Exception($"We couldn't find user basket with user id {userId}");
-
-                var existingItem = basket.Items.FirstOrDefault(x => x.ProductId == id);
+                var existingItem = biIems.FirstOrDefault(x => x.ProductId == id);
                 if (existingItem == null)
                 {
-                    basket.Items.Add(new BasketItem
+                    biIems.Add(new BasketItem
                     {
                         BasketId = basket.Id,
-                        Product = await _productsRepo.GetOneAsync(id),
+                        ProductId = id,
                         Quantity = 1
                     });
                 }
@@ -61,12 +69,14 @@ namespace CasperDelivery.Services
                 {
                     existingItem.Quantity += 1;
                 }
-                await _basketRepo.UpdateAsync(basket);
-                await _basketItemRepo.UpdateAsync(basket.Items);
+
+                await _basketItemRepo.UpdateAsync(biIems);
+
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.ToString());
+                _toastService.ShowError("Failed to add product to the cart");
             }
         }
 
@@ -88,14 +98,12 @@ namespace CasperDelivery.Services
                 if (itemToDelete != null && itemToDelete.Quantity > 1)
                 {
                     itemToDelete.Quantity -= 1;
-                    await _basketRepo.UpdateAsync(basket);
                 }
                 else
                 {
                     if (itemToDelete != null) await _basketItemRepo.DeleteAsync(itemToDelete.Id);
                 }
-
-                
+                await _basketRepo.UpdateAsync(basket);
             }
             catch (Exception ex)
             {

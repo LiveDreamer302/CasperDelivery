@@ -1,7 +1,8 @@
 ﻿@page "/restaurants/{RestaurantId}"
 @using CasperDelivery.Interfaces
-@using CasperDelivery.Interfaces.Specifications
 @inject ICartService cartService
+@inject IToastService toastService
+
 
 @if(Restaurant != null)
 {
@@ -26,7 +27,7 @@
                         <p class="product-price">@String.Format("{0:0.00}", item.Price) $</p>
                         <AuthorizeView>
                             <Authorized>
-                                <button onclick="@(async () => await cartService.AddItemToCart(item.Id))" class="cart-btn" id=""><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                  <button onclick="@(async () => await AddItemToCart(item.Id))" class="cart-btn" id=""><i class="fas fa-shopping-cart"></i> Add to Cart</button>
                             </Authorized>
                             <NotAuthorized>
                                 <p>You need to enter your account to add item to cart</p>
@@ -49,5 +50,11 @@
     {
         int Id = int.Parse(RestaurantId);
         Restaurant = await cartService.GetRestaurantInfo(Id);
+    }
+
+    protected async Task AddItemToCart(int id)
+    {
+         await cartService.AddItemToCart(id);
+        toastService.ShowSuccess("Product added to cart successfully!");
     }
 }

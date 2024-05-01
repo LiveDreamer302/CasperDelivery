@@ -52,7 +52,6 @@
     List<Restaurants> Restaurant = new List<Restaurants>();
     Basket Basket = new Basket();
     string UserId;
-    int ItemsCount = 0;
 
     protected override async Task OnInitializedAsync()
     {
@@ -65,6 +64,5 @@
         }
             Restaurant = await service.GetAllAsync();
             Basket = await service.GetBasketAsync(UserId);
-            
     }
 }

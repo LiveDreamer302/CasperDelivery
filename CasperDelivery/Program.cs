@@ -1,3 +1,4 @@
+using Blazored.Toast;
 using CasperDelivery.Areas.Identity;
 using CasperDelivery.Data;
 using CasperDelivery.Data.Models;
@@ -35,13 +36,14 @@ StripeConfiguration.ApiKey = configuration["StripeSettings:SecretKey"];
 //Services
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped<IPaymentService, PaymentService>();
-builder.Services.AddScoped<ICartService, CartService>();
+builder.Services.AddTransient<ICartService, CartService>();
 builder.Services.AddScoped<IOrdersRepository, OrdersRepository>();
 builder.Services.AddScoped<ICartRepository, CartRepository>();
 builder.Services.AddScoped<IAddressRepository,AddressRepository>();
 builder.Services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<IdentityUser>>();
 builder.Services.AddTransient<NavBarService>();
 builder.Services.AddTransient<IEmailSender, EmailSender>();
+builder.Services.AddBlazoredToast();
 builder.Services.Configure<AuthMessageSenderOptions>(builder.Configuration);
 builder.Services.AddHttpClient();
 

@@ -127,13 +127,13 @@
         {
             itemToUpdate.Quantity = newQuantity;
             _basketItems = updatedBasket.AsReadOnly();
-            StateHasChanged(); // Notify Blazor that the state has changed
+            StateHasChanged(); 
         }
     }
 
     async Task DeleteOneItemQuantity(int productId, int newQuantity)
     {
-        if (newQuantity <= 0)
+        if (newQuantity == 0)
         {
             await cartService.DeleteOneItemFromCart(productId);
             _basketItems = _basketItems.Where(x => x.ProductId != productId).ToList().AsReadOnly();

@@ -282,3 +282,11 @@ C:\netprojects\Important\CasperDelivery\CasperDelivery\obj\Debug\net7.0\scopedcs
 C:\netprojects\Important\CasperDelivery\casperdelivery\bin\Debug\net7.0\Stripe.net.dll
 C:\netprojects\Important\CasperDelivery\CasperDelivery\obj\Debug\net7.0\scopedcss\Pages\SuccessPage.razor.rz.scp.css
 C:\netprojects\Important\CasperDelivery\casperdelivery\obj\Debug\net7.0\scopedcss\Pages\OrderPage.razor.rz.scp.css
+C:\netprojects\Important\CasperDelivery\CasperDelivery\bin\Debug\net7.0\Blazored.Toast.dll
+C:\netprojects\Important\CasperDelivery\CasperDelivery\bin\Debug\net7.0\Microsoft.AspNetCore.Authorization.dll
+C:\netprojects\Important\CasperDelivery\CasperDelivery\bin\Debug\net7.0\Microsoft.AspNetCore.Components.dll
+C:\netprojects\Important\CasperDelivery\CasperDelivery\bin\Debug\net7.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\netprojects\Important\CasperDelivery\CasperDelivery\bin\Debug\net7.0\Microsoft.AspNetCore.Components.Web.dll
+C:\netprojects\Important\CasperDelivery\CasperDelivery\bin\Debug\net7.0\Microsoft.AspNetCore.Metadata.dll
+C:\netprojects\Important\CasperDelivery\CasperDelivery\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\netprojects\Important\CasperDelivery\CasperDelivery\bin\Debug\net7.0\Microsoft.JSInterop.dll

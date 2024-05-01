@@ -17,7 +17,7 @@ namespace CasperDelivery.Repositories
 
         public Task<Basket> GetBasketByUserId(string userId)
         {
-            return _appDbContext.Basket.FirstOrDefaultAsync(x => x.UserId == userId);
+            return _appDbContext.Basket.Include(x => x.Items).FirstOrDefaultAsync(x => x.UserId == userId);
         }
         
     }

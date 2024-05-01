@@ -1,4 +1,5 @@
-﻿@inherits LayoutComponentBase
+﻿@using Blazored.Toast.Configuration
+@inherits LayoutComponentBase
 
 <PageTitle>CasperDelivery</PageTitle>
 
@@ -6,13 +7,15 @@
     <div>
         <TopMenu/>
     </div>
+    <BlazoredToasts Position="ToastPosition.BottomRight"
+                    Timeout="10"
+                    ShowProgressBar="true" />
 
     <main>
         <article class="content">
             @Body
         </article>
     </main>
-    
     <div>
         <PageFooter/>
     </div>
