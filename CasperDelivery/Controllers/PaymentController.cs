@@ -15,21 +15,21 @@ namespace CasperDelivery.Controllers;
 [Route("[controller]")]
 [ApiController]
 public class PaymentController : ControllerBase
-{   private const string WhSecret = "whsec_7fa3b8d2c7e49efeec8d806f3814e55c1c270ce73a85c065a7be1f0eed5cb517";
+{   
     private readonly IGenericRepository<BasketItem> _basketItemRepo;
     private readonly ICartRepository _basketRepo;
     private readonly IGenericRepository<Orders> _orderRepo;
-    private readonly IGenericRepository<OrderItem> _orderItemRepo;
     private readonly IPaymentService _paymentService;
+    private readonly IConfiguration _config;
 
     public PaymentController(IGenericRepository<BasketItem> basketItemRepo, ICartRepository basketRepo, 
-                            IGenericRepository<Orders> orderRepo, IGenericRepository<OrderItem> orderItemRepo, IPaymentService paymentService)
+                            IGenericRepository<Orders> orderRepo, IPaymentService paymentService, IConfiguration config)
     {
         _basketItemRepo = basketItemRepo;
         _basketRepo = basketRepo;
         _orderRepo = orderRepo;
-        _orderItemRepo = orderItemRepo;
         _paymentService = paymentService;
+        _config = config;
     }
 
     [HttpPost("checkout")]
@@ -42,6 +42,7 @@ public class PaymentController : ControllerBase
     [HttpPost("webhook")]
     public async Task<IActionResult> Index()
     {
+        string WhSecret = _config["StripeWh"];
         var json = await new StreamReader(HttpContext.Request.Body).ReadToEndAsync();
         try
         {

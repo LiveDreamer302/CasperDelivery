@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "52X8a5Ue3n5vgE8F1CW7sevJYzMawr/KQaP+4D2AhKs5+sko7LhyP3M1gxEp0atgKWawIujxOmUhRytRcZduwg==",
+  "dgSpecHash": "RrJnyqBYT3lYo2dNsvO27M7VvDWCdcrABSETfex8ctBm1u/BdvvFi4623FEqnY3CxQKNQREO7IaL2BnFUJzpzg==",
   "success": true,
-  "projectFilePath": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\CasperDelivery.csproj",
+  "projectFilePath": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\CasperDelivery.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\stefa\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\stefa\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
