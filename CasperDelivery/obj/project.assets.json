@@ -12098,11 +12098,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\CasperDelivery.csproj",
+      "projectUniqueName": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\CasperDelivery.csproj",
       "projectName": "CasperDelivery",
-      "projectPath": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\CasperDelivery.csproj",
+      "projectPath": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\CasperDelivery.csproj",
       "packagesPath": "C:\\Users\\stefa\\.nuget\\packages\\",
-      "outputPath": "C:\\netprojects\\Important\\CasperDelivery\\casperdelivery\\obj\\",
+      "outputPath": "C:\\netprojects\\Important\\CasperDelivery\\CasperDelivery\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -12130,11 +12130,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
