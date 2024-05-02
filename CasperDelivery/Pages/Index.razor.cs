@@ -11,7 +11,6 @@ namespace CasperDelivery.Pages
         private string submitMessage = "";
         private async Task SubmitForm()
         {
-            // Validate the form
             if (string.IsNullOrWhiteSpace(Contact.Name))
                 validationMessages.Name = "Please enter your name.";
             if (string.IsNullOrWhiteSpace(Contact.Email))
